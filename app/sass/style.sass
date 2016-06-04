@@ -1,0 +1,125 @@
+// (\_/)   codecode
+// ('ㅅ')づ free to personalize
+// (")(")  refer to nonlinear.nyc/codecode
+
+// ('ㅅ')づ font variables
+
+$font-title: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+$font-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+$font-mono: "Courier New", Courier, monospace
+
+// ('ㅅ')づ critical variables
+
+$gap: 20px
+$bp: 770px
+
+// ('ㅅ')づ color variables
+
+$color-bg: #eee
+$color-text: black
+$color-title: black
+$color-link: grey
+$color-divider: grey
+$color-link-hover: lighten($color-link, 20%)
+
+// button color variables
+
+$button:               #eee
+$button-hover:         darken($button, 10%)
+$button-border:        #999999
+$button-border-hover:  $button-border
+$button-text:          #666
+$button-text-hover:    black
+$color-select:         #b3d4fc
+$color-accent:         $color-select
+
+// ('ㅅ')づ status color variables
+
+$status: #eee
+$status-font: #3A4351
+$status-border: #999EA5
+$status-primary: #00A882
+$status-primary-font: white
+$status-primary-border: $status-primary
+$status-success: #1B97BB
+$status-success-font: white
+$status-success-border: $status-success
+$status-warning: #FFA51A
+$status-warning-font: white
+$status-warning-border: $status-warning
+$status-danger: #DB2B53
+$status-danger-font: white
+$status-danger-border: $status-danger
+
+// ('ㅅ')づ toggle variables
+
+$toggle_height: 20px
+$toggle_half: ($toggle_height / 2)
+$toggle_width: ($toggle_height * 2)
+$toggle_gap: 1px
+$toggle_bg: $color-bg
+$toggle_off: #999
+$toggle_on: #666
+
+// ('ㅅ')づ function variables
+
+$prefixes: webkit moz ms o spec
+$legacy_support_for_ie: false !default
+$icons_on: true
+
+// ('ㅅ')づ vendors import
+
+@import './bower_components/bootstrap-sass/assets/stylesheets/bootstrap'
+@import './bower_components/font-awesome/scss/font-awesome'
+@import './bower_components/animatewithsass/animate.scss'
+@import './bower_components/bootstrap-chosen/bootstrap-chosen.scss'
+@import 'vendors/codecode'
+@import 'vendors/flexslider'
+
+// ('ㅅ')づ generated imports
+
+// @import 'generated/svg'
+
+// ('ㅅ')づ project imports
+
+@import 'layout'
+
+$magh: 900px
+$magw: 640px
+
+
+.flexslider
+    width: $magw
+    text-align: center
+    margin: $gapx2 auto !important
+    .flex-viewport
+        width: $magw
+        height: $magh
+        +shadow(normal, 0 1px 3px rgba(0, 0, 0, 0.10))
+        .slides
+            li, li.flex-active-slide
+                background-color: #FFF
+                height: $magh
+                width: $magw
+    .flex-direction-nav
+        width: 300px
+    .flex-control-nav
+        margin-top: $gap !important
+        li
+            margin-left: -4px
+            a
+                +radius(normal, 0)
+                cursor: pointer
+                width: $gap
+                height: $gapxhalf
+                +opacity(20)
+                &:hover, &.flex-active
+                    width: $gapx4
+                    +opacity(100)
+                    background-color: #B30043
+
+
+
+
+
+
