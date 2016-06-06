@@ -7,7 +7,7 @@ config = require('../config');
 // moves dist to gh-pages
 
 gulp.task('fontgen1', function(callback){
-  del(['./app/fonts', './dist/fonts'], callback);
+  del(['./app/fonts', './fonts'], callback);
 });
 
 gulp.task('fontgen2', function() {

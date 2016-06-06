@@ -1,7 +1,7 @@
 var config = {
   sass: {
     src: './app/sass/style.sass',
-    dest: './dist/css',
+    dest: './css',
     error: 'Error Running SASS'
   },
   todo: {
@@ -9,35 +9,35 @@ var config = {
     dest: './'
   },
   uncss: {
-    src: './dist/css/style.css',
-    dest: './dist/css',
-    html: ['./dist/**/*.html'],
-    ignore: [/.chosen/, /.popover/, /.calendar/]
+    src: './css/style.css',
+    dest: './css',
+    html: ['./*.html'],
+    ignore: [/.chosen/, /.popover/, /.calendar/, /.flexslider/]
   },
   nunjucks: {
     src: './app/pages/**/*.*',
-    dest: './dist',
+    dest: './',
     error: 'Error Running Nunjucks',
     template: './app/templates/',
     watch: './app/templates/**/*',
     data: './app/data/generated/data.json'
   },
-  ghPages: {
-    src: './dist/**/*'
-  },
+  // ghPages: {
+  //   src: './dist/**/*'
+  // },
   browserSync: {
-    baseDir: './dist/'
+    baseDir: './'
   },
   svgSprites: {
     src: './app/svg/*.svg',
-    dest: './dist',
+    dest: './',
     cssFile: 'svg.scss',
     generated: './app/sass/generated',
     filter: '**/*.svg'
   },
   imagemin: {
      src: './app/images/**/*.+(png|jpg|jpeg|gif|svg)',
-    dest: './dist/images'
+    dest: './images'
   },
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
@@ -46,7 +46,7 @@ var config = {
           './bower_components/detectizr/dist/detectizr.js',
           './bower_components/chosen/chosen.jquery.js',
           './app/js/*.js'],
-    dest: './dist/js',
+    dest: './js',
     title: 'main.js'
   },
   json: {

@@ -13,7 +13,7 @@ gulp.task('gh-pages', function() {
 
 gulp.task('publish', function(callback) {
   runSequence(
-    ['uncss'],
+    // ['uncss'],
     ['gh-pages'],
     callback
     );
