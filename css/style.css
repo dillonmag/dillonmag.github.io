@@ -1499,6 +1499,18 @@ html.touch .chosen-container {
   height: 0;
 }
 
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+* html .flexslider .slides {
+  height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
 .flexslider {
   position: relative;
   zoom: 1;
@@ -1512,10 +1524,87 @@ html.touch .chosen-container {
   height: auto;
 }
 
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.3;
+  filter: "alpha(opacity=30)";
+  -khtml-opacity: 0.3;
+  -moz-opacity: 0.3;
+  left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.3;
+  filter: "alpha(opacity=30)";
+  -khtml-opacity: 0.3;
+  -moz-opacity: 0.3;
+  right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+}
+
 .flexslider {
   width: 640px;
   text-align: center;
   margin: 40px auto !important;
+}
+
+.flexslider .flex-viewport {
+  width: 640px;
+  height: 900px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.flexslider .flex-viewport .slides li,
+.flexslider .flex-viewport .slides li.flex-active-slide {
+  background-color: #FFF;
+  height: 900px;
+  width: 640px;
+}
+
+.flexslider .flex-direction-nav {
+  width: 300px;
+}
+
+.flexslider .flex-control-nav {
+  margin-top: 20px !important;
+}
+
+.flexslider .flex-control-nav li {
+  margin-left: -4px;
+}
+
+.flexslider .flex-control-nav li a {
+  border-radius: 0;
+  background-clip: padding-box;
+  cursor: pointer;
+  width: 20px;
+  height: 10px;
+  opacity: 0.2;
+  filter: "alpha(opacity=20)";
+  -khtml-opacity: 0.2;
+  -moz-opacity: 0.2;
+}
+
+.flexslider .flex-control-nav li a:hover,
+.flexslider .flex-control-nav li a.flex-active {
+  width: 80px;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  background-color: #B30043;
 }
 
 .newsletter {
