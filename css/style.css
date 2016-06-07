@@ -10985,9 +10985,13 @@ html[xmlns] .flexslider .slides {
           -moz-opacity: 1;
           background-color: #B30043; }
 
+.btn {
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important; }
+
 .newsletter {
   background-color: #fff;
-  padding: 20px; }
+  padding: 30px; }
   .newsletter .member {
     display: none;
     border-top: solid 1px #ccc;
