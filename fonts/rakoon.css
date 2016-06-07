@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "RakoonPersonalUse";
+    src: url("rakoon.eot");
+    src: url("rakoon.eot?#iefix") format("embedded-opentype"),
+         url("rakoon.woff2") format("woff2"),
+         url("rakoon.woff") format("woff"),
+         url("rakoon.ttf") format("truetype"),
+         url("rakoon.svg#RakoonPersonalUse") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}

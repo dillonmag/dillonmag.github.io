@@ -10020,20 +10020,20 @@ textarea {
     content: ""; } }
 
 h1, h2, h3, h4, .nav li a, h5, h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: tofino-bold;
   color: black;
   text-rendering: optimizeLegibility; }
 
 body {
   background-color: #eee;
   color: black;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
 
 html,
 input,
 select,
 textarea {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: black; }
 
 :focus {
@@ -10283,12 +10283,12 @@ a:not(.btn):not([data-toggle="tab"]):not([data-toggle="collapse"]) {
       transition: all 300ms ease-out !important;
       border: solid 1px grey !important;
       text-decoration: none !important;
-      color: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: tofino-bold;
       border-bottom: none !important;
       background-color: #eee !important; }
     .nav li.active a, .nav li a:hover {
       padding: 15px 0;
-      color: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; }
+      color: tofino-bold !important; }
     .nav li.active a {
       background-color: grey;
       -webkit-transform: translate(0px, 1px);
@@ -10922,14 +10922,41 @@ html[xmlns] .flexslider .slides {
     -moz-opacity: 1;
     right: 10px; } }
 
+@font-face {
+  font-family: rakoon;
+  src: url("../fonts/rakoon.eot");
+  src: url("../fonts/rakoon.eot?#iefix") format("embedded-opentype"), url("../fonts/rakoon.woff") format("woff"), url("../fonts/rakoon.ttf") format("truetype"), url("../fonts/rakoon.svg#rakoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: rakoon;
+    src: url("../fonts/rakoon.svg#rakoon") format("svg"); } }
+
+@font-face {
+  font-family: tofino-bold;
+  src: url("../fonts/tofino-bold.eot");
+  src: url("../fonts/tofino-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/tofino-bold.woff") format("woff"), url("../fonts/tofino-bold.ttf") format("truetype"), url("../fonts/tofino-bold.svg#tofino-bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: tofino-bold;
+    src: url("../fonts/tofino-bold.svg#tofino-bold") format("svg"); } }
+
 .flexslider {
   width: 640px;
-  text-align: center;
   margin: 40px auto !important; }
   .flexslider .flex-viewport {
     width: 640px;
     height: 900px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #FFF;
       height: 900px;
@@ -10986,11 +11013,58 @@ html[xmlns] .flexslider .slides {
       backface-visibility: hidden; }
 
 .subscription {
-  width: 600px;
-  height: 500px; }
+  width: 580px;
+  height: 735px; }
   .lastpage .subscription {
-    margin-top: 120px; }
+    margin: 0 30px; }
 
-.lastpage {
-  background-image: url("../images/mag01/12.png");
-  background-repeat: no-repeat; }
+.cover h1, .cover h2, .cover h3 {
+  background-color: #FFF;
+  displaY: inline-block;
+  position: absolute;
+  left: 0; }
+
+.cover h1 {
+  top: -20px; }
+
+.cover h2 {
+  font-size: 70px;
+  padding: 0 30px;
+  bottom: 60px; }
+
+.first .cover {
+  background-image: url("../images/01/cover.jpg");
+  background-size: cover; }
+  .first .cover h1, .first .cover h2, .first .cover h3 {
+    color: #A52749 !important; }
+
+h1 {
+  font-family: rakoon;
+  padding: 0 30px;
+  font-size: 120px; }
+
+.first .lastpage {
+  background-image: url("../images/01/cover.jpg");
+  background-size: cover; }
+
+.lastpage h1 {
+  color: white;
+  margin: 0; }
+
+.border {
+  background-color: #FFF;
+  position: absolute; }
+  .border:nth-of-type(2n-1) {
+    width: 640px;
+    height: 30px; }
+  .border:nth-of-type(2n) {
+    width: 30px;
+    height: 900px;
+    background-color: #FFF;
+    position: absolute;
+    display: block;
+    content: ""; }
+  .border:nth-of-type(3) {
+    bottom: 0; }
+  .border:nth-of-type(4) {
+    left: 610px; }

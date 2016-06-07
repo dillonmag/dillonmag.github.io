@@ -7,13 +7,13 @@ config = require('../config');
 // moves dist to gh-pages
 
 gulp.task('fontgen1', function(callback){
-  del(['./app/fonts', './fonts'], callback);
+  del(['./fonts'], callback);
 });
 
 gulp.task('fontgen2', function() {
   return gulp.src("./app/fontgen/*.{ttf,otf}")
   .pipe($.fontgen({
-    dest: "./app/fonts/"
+    dest: "./fonts/"
   }));
 });
 

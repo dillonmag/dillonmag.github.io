@@ -44,6 +44,7 @@
     "jshint-stylish": "^2.0.1",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4",
-    "svg2png": "^2.0.0"
+    "svg2png": "^2.0.0",
+    "ttf2woff2": "^2.0.3"
   }
 }

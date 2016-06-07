@@ -4,9 +4,10 @@
 
 // ('ㅅ')づ font variables
 
-$font-title: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
-$font-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+$font-title: tofino-bold
+$font-text: Helvetica Neue, Helvetica, Arial, sans-serif
 $font-mono: "Courier New", Courier, monospace
+$font-brand: rakoon
 
 // ('ㅅ')づ critical variables
 
@@ -84,18 +85,19 @@ $icons_on: true
 
 @import 'layout'
 
++font-face(rakoon)
++font-face(tofino-bold)
+
 $magh: 900px
 $magw: 640px
 
-
 .flexslider
     width: $magw
-    text-align: center
     margin: $gapx2 auto !important
     .flex-viewport
         width: $magw
         height: $magh
-        +shadow(normal, 0 1px 3px rgba(0, 0, 0, 0.10))
+        +shadow(normal, 0 1px 3px rgba(0, 0, 0, 0.20))
         .slides
             li, li.flex-active-slide
                 background-color: #FFF
@@ -132,13 +134,57 @@ $magw: 640px
             display: block
             +fadeIn
 .subscription
-    width: 600px
-    height: 500px
+    width: $magw - 60px
+    height: $magh - 30px - 135px
     .lastpage &
-        margin-top: 120px
+        margin: 0 30px
+
+.cover
+    h1, h2, h3
+        background-color: #FFF
+        displaY: inline-block
+        position: absolute
+        left: 0
+    h1
+        top: -20px
+    h2
+        font-size: 70px
+        padding: 0 30px
+        bottom: 60px
+    .first &
+        background-image: url("../images/01/cover.jpg")
+        background-size: cover
+        h1, h2, h3
+            color: #A52749 !important
+h1
+    font-family: $font-brand
+    padding: 0 30px
+    font-size: 120px
 
 .lastpage
-    background-image: url("../images/mag01/12.png")
-    background-repeat: no-repeat
+    .first &
+        background-image: url("../images/01/cover.jpg")
+        background-size: cover
+    h1
+        color: white
+        margin: 0
 
+.border
+
+    background-color: #FFF
+    &:nth-of-type(2n-1)
+        width: $magw
+        height: 30px
+    position: absolute
+    &:nth-of-type(2n)
+        width: 30px
+        height: $magh
+        background-color: #FFF
+        position: absolute
+        display: block
+        content: ""
+    &:nth-of-type(3)
+        bottom: 0
+    &:nth-of-type(4)
+        left: $magw - 30px
 

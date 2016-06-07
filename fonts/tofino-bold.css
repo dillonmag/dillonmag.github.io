@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Tofino-Bold";
+    src: url("tofino-bold.eot");
+    src: url("tofino-bold.eot?#iefix") format("embedded-opentype"),
+         url("tofino-bold.woff2") format("woff2"),
+         url("tofino-bold.woff") format("woff"),
+         url("tofino-bold.ttf") format("truetype"),
+         url("tofino-bold.svg#Tofino-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
