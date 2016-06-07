@@ -148,26 +148,31 @@ $magw: 640px
     h1
         top: -20px
     h2
-        font-size: 80px
-        font-weight: bold
         padding: 0 30px
         bottom: 60px
     .first &
         background-image: url("../images/01/cover.jpg")
         background-size: cover
-        h1, h2, h3
-            color: #A52749 !important
+.first
+    h1, h2, h3
+        color: #A52749 !important
 h1
     font-family: $font-brand
     padding: 0 30px
     font-size: 120px
+h2
+    font-size: 80px
+    &.pending
+        text-align: center
+        font-size: 70px
+        margin-top: 50%
 
 .lastpage
     .first &
         background-image: url("../images/01/cover.jpg")
         background-size: cover
     h1
-        color: white
+        color: white !important
         margin: 0
 
 .border

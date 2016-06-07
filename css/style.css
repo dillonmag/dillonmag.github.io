@@ -11028,28 +11028,34 @@ html[xmlns] .flexslider .slides {
   top: -20px; }
 
 .cover h2 {
-  font-size: 80px;
-  font-weight: bold;
   padding: 0 30px;
   bottom: 60px; }
 
 .first .cover {
   background-image: url("../images/01/cover.jpg");
   background-size: cover; }
-  .first .cover h1, .first .cover h2, .first .cover h3 {
-    color: #A52749 !important; }
+
+.first h1, .first h2, .first h3 {
+  color: #A52749 !important; }
 
 h1 {
   font-family: rakoon;
   padding: 0 30px;
   font-size: 120px; }
 
+h2 {
+  font-size: 80px; }
+  h2.pending {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 50%; }
+
 .first .lastpage {
   background-image: url("../images/01/cover.jpg");
   background-size: cover; }
 
 .lastpage h1 {
-  color: white;
+  color: white !important;
   margin: 0; }
 
 .border {
