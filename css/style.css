@@ -10922,6 +10922,40 @@ html[xmlns] .flexslider .slides {
     -moz-opacity: 1;
     right: 10px; } }
 
+.text {
+  color: #333; }
+  .text header {
+    width: 70%;
+    padding: 35px 0;
+    overflow: hidden; }
+    .text header h1, .text header h2, .text header h3 {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      background-color: #00b300;
+      padding: 0 10px 0 30px;
+      display: inline-block;
+      margin: 0 0 -10px -10px;
+      color: white !important; }
+    .text header h1, .text header h2 {
+      font-size: 60px; }
+    .text header h3 {
+      margin-top: 25px; }
+  .text div {
+    width: 50%;
+    float: left; }
+    .text div:first-of-type {
+      padding-right: 15px;
+      padding-left: 60px; }
+    .text div:nth-of-type(2) {
+      padding-left: 15px;
+      padding-right: 60px; }
+
+p.eye {
+  font-family: DIN;
+  font-size: 30px;
+  line-heighT: 30px;
+  padding: 20px; }
+
 @font-face {
   font-family: rakoon;
   src: url("../fonts/rakoon.eot");

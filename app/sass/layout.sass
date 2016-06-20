@@ -1,1 +1,35 @@
-// project CSS rules here
+.text
+    color: #333
+    header
+        width: 70%
+        padding: 35px 0
+        overflow: hidden
+
+        h1, h2, h3
+            +rotate(-5)
+            background-color: $c-mag01
+            padding: 0 10px 0 30px
+            display: inline-block
+            margin: 0 0 -10px -10px
+            color: white !important
+
+        h1, h2
+            font-size: 60px
+        h3
+            margin-top: 25px
+    div
+        width: 50%
+        float: left
+        &:first-of-type
+            padding-right: 15px
+            padding-left: 60px
+        &:nth-of-type(2)
+            padding-left: 15px
+            padding-right: 60px
+
+p.eye
+    font-family: $font-title
+    font-size: 30px
+    line-heighT: 30px
+    padding: 20px
+
