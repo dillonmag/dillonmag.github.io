@@ -16024,25 +16024,5 @@ $('.flexslider').flexslider({
     }
 });
 
-$(window).load(function(){
 
-    //set some variables for calculating the hash
-
-    var index = 0, hash = window.location.hash;
-
-    //via malsup (Cycle plugin), calculates the hash value
-
-    if (hash) {
-        index = /\d+/.exec(hash)[0];
-        index = (parseInt(index) || 1) - 1;
-    }
-
-    $(".flexslider").flexslider({
-        startAt: index, //now foo.html#3 will load item 3
-        after:function(slider){
-            window.location.hash = slider.currentSlide+1;
-            //now when you navigate, your location updates in the URL
-        }
-    })
-})
 
