@@ -11495,7 +11495,7 @@ body {
   background-color: #FFF; }
   .subscription iframe {
     height: 460px; }
-  .lastpage .subscription {
+  .backcover .subscription {
     margin: 0 30px; }
 
 .cover h1, .cover h2, .cover h3 {
@@ -11534,11 +11534,11 @@ h2 {
     font-size: 70px;
     margin-top: 50%; }
 
-.first .lastpage {
+.first .backcover {
   background-image: url("../images/01/cover.jpg");
   background-size: cover; }
 
-.lastpage h1 {
+.backcover h1 {
   color: white !important;
   margin: 0; }
 
