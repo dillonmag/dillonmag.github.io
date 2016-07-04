@@ -11494,7 +11494,7 @@ body {
 .subscription {
   background-color: #FFF; }
   .subscription iframe {
-    height: 460px; }
+    height: 465px; }
   .backcover .subscription {
     margin: 0 30px; }
 
@@ -11600,6 +11600,22 @@ html.touch .hide-touch, html.no-touch .show-touch {
 .flex-next {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.alert {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-duration: 1s;
