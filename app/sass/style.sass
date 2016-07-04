@@ -291,10 +291,30 @@ html.touch .hide-touch, html.no-touch .show-touch
     +radius(normal, 50%)
 
 
-
-
 .flex-next
     +pulse
 .alert
     +fadeInDown
+
+
+.share
+    +fadeInLeft($delay: 1.2s)
+    padding: 100px 20px
+    a
+        +size(square, 30px)
+        display: inline-block
+        background-color: white
+        +radius(normal, 50%)
+        text-align: center
+        +transition
+        color: #666
+        font-size: 20px
+        margin-left: -5px
+        padding-top: 1px
+        i.fa-envelope
+            font-size: 15px
+            @include translate(0, -3)
+        &:hover
+            background-color: transparent
+            color: #666
 

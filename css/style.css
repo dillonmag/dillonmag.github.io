@@ -11628,3 +11628,43 @@ html.touch .hide-touch, html.no-touch .show-touch {
   animation-fill-mode: both;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+
+.share {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 100px 20px; }
+  .share a {
+    width: 30px;
+    height: 5px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    background-clip: padding-box;
+    text-align: center;
+    -webkit-transition: all 300ms ease-out !important;
+    transition: all 300ms ease-out !important;
+    color: #666;
+    font-size: 20px;
+    margin-left: -5px;
+    padding-top: 1px; }
+    .share a i.fa-envelope {
+      font-size: 15px;
+      -webkit-transform: translate(0px, -3px);
+      transform: translate(0px, -3px); }
+    .share a:hover {
+      background-color: transparent;
+      color: #666; }
