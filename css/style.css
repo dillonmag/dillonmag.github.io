@@ -10956,6 +10956,30 @@ p.eye {
   line-heighT: 30px;
   padding: 20px; }
 
+.flexslider {
+  width: 639.999px; }
+  .flexslider .flex-viewport {
+    width: 639.999px;
+    height: 900px; }
+    .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
+      height: 900px;
+      width: 639.999px; }
+
+.subscription {
+  width: 579.999px;
+  height: 735px; }
+  .subscription iframe {
+    width: 579.999px; }
+
+.border:nth-of-type(2n-1) {
+  width: 639.999px; }
+
+.border:nth-of-type(2n) {
+  height: 900px; }
+
+.border:nth-of-type(4) {
+  left: 609.999px; }
+
 @font-face {
   font-family: rakoon;
   src: url("../fonts/rakoon.eot");
@@ -10993,7 +11017,6 @@ body {
   heighT: 100vh; }
 
 .flexslider {
-  width: 640px;
   position: relative;
   margin: 0 auto !important;
   top: 50%;
@@ -11015,15 +11038,11 @@ body {
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    width: 640px;
-    height: 900px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }
     .flexslider .flex-viewport:hover {
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
-      background-color: #FFF;
-      height: 900px;
-      width: 640px; }
+      background-color: #FFF; }
   .flexslider .flex-direction-nav {
     width: 300px; }
   .flexslider .flex-control-nav {
@@ -11473,11 +11492,8 @@ body {
       backface-visibility: hidden; }
 
 .subscription {
-  width: 580px;
-  background-color: #FFF;
-  height: 735px; }
+  background-color: #FFF; }
   .subscription iframe {
-    width: 580px;
     height: 460px; }
   .lastpage .subscription {
     margin: 0 30px; }
@@ -11530,19 +11546,56 @@ h2 {
   background-color: #FFF;
   position: absolute; }
   .border:nth-of-type(2n-1) {
-    width: 640px;
     height: 30px; }
   .border:nth-of-type(2n) {
     width: 30px;
-    height: 900px;
     background-color: #FFF;
     position: absolute;
     display: block;
     content: ""; }
   .border:nth-of-type(3) {
     bottom: 0; }
-  .border:nth-of-type(4) {
-    left: 610px; }
+
+html.touch .show-touch,
+html.no-touch .hide-touch {
+  display: block; }
+
+html.touch .hide-touch, html.no-touch .show-touch {
+  display: none; }
+
+.instructions {
+  background-color: white;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2000ms;
+  animation-delay: 2000ms;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  font-family: DIN;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 100%;
+  display: table;
+  margin-left: 480px;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box; }
+  .instructions p {
+    margin: 5px 0 0 0; }
 
 .flex-next {
   -webkit-animation-name: pulse;

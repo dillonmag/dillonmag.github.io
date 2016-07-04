@@ -1,0 +1,24 @@
+=magazine($height: 900px, $ratio: .71111)
+    .flexslider
+        width: ($height * $ratio)
+        .flex-viewport
+            width: ($height * $ratio)
+            height: $height
+            .slides
+                li, li.flex-active-slide
+                    height: $height
+                    width: ($height * $ratio)
+    .subscription
+        width: ($height * $ratio) - 60px
+        height: $height - 30px - 135px
+        iframe
+            width: ($height * $ratio) - 60px
+    .border
+        &:nth-of-type(2n-1)
+            width: ($height * $ratio)
+        &:nth-of-type(2n)
+            height: $height
+        &:nth-of-type(4)
+            left: ($height * $ratio) - 30px
+
++magazine

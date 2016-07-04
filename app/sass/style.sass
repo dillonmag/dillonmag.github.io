@@ -87,20 +87,21 @@ $icons_on: true
 $c-mag01: lighten(green, 10%)
 
 @import 'layout'
+@import 'magazine'
 
 +font-face(rakoon)
 +font-face(DIN)
 
-$magh: 900px
-$magw: 640px
+
 
 body
     +pattern(dots-b, 10px, #fff, #eee)
     heighT: 100vh
 
 
+
+
 .flexslider
-    width: $magw
     position: relative
     margin: 0 auto !important
     top: 50%
@@ -108,16 +109,12 @@ body
     vertical-align: bottom !important
     .flex-viewport
         +fadeInLeft
-        width: $magw
-        height: $magh
         +shadow(normal, 0px 0px 5px rgba(0, 0, 0, 0.30))
         &:hover
             +shadow(normal, 0px 0px 5px rgba(0, 0, 0, 0.50))
         .slides
             li, li.flex-active-slide
                 background-color: #FFF
-                height: $magh
-                width: $magw
     .flex-direction-nav
         width: 300px
     .flex-control-nav
@@ -207,11 +204,8 @@ body
             display: block
             +fadeIn
 .subscription
-    width: $magw - 60px
     background-color: #FFF
-    height: $magh - 30px - 135px
     iframe
-        width: $magw - 60px
         height: 460px
     .lastpage &
         margin: 0 30px
@@ -257,23 +251,47 @@ h2
         margin: 0
 
 .border
-
     background-color: #FFF
     &:nth-of-type(2n-1)
-        width: $magw
         height: 30px
     position: absolute
     &:nth-of-type(2n)
         width: 30px
-        height: $magh
         background-color: #FFF
         position: absolute
         display: block
         content: ""
     &:nth-of-type(3)
         bottom: 0
-    &:nth-of-type(4)
-        left: $magw - 30px
+
+html.touch .show-touch,
+html.no-touch .hide-touch
+        display: block
+html.touch .hide-touch, html.no-touch .show-touch
+        display: none
+
+.instructions
+    background-color: white
+    +bounceIn($delay: ($delay * 20))
+    position: absolute
+    top: 50%
+    margin-top: -40px
+    font-family: $font-title
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 100%
+    display: table
+    margin-left: 480px
+    padding: 20px
+    width: 120px
+    height: 120px
+    text-align: center
+    p
+        margin: 5px 0 0 0
+    +radius(normal, 50%)
+
+
+
 
 .flex-next
     +pulse
