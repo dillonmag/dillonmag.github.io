@@ -13,6 +13,7 @@ $font-brand: rakoon
 
 $gap: 20px
 $bp: 770px
+$delay: 100ms
 
 // ('ㅅ')づ color variables
 
@@ -93,13 +94,25 @@ $c-mag01: lighten(green, 10%)
 $magh: 900px
 $magw: 640px
 
+body
+    +pattern(dots-b, 10px, #fff, #eee)
+    heighT: 100vh
+
+
 .flexslider
     width: $magw
-    margin: $gapx2 auto !important
+    position: relative
+    margin: 0 auto !important
+    top: 50%
+    transform: translateY(-50%)
+    vertical-align: bottom !important
     .flex-viewport
+        +fadeInLeft
         width: $magw
         height: $magh
-        +shadow(normal, 0 1px 3px rgba(0, 0, 0, 0.20))
+        +shadow(normal, 0px 0px 5px rgba(0, 0, 0, 0.30))
+        &:hover
+            +shadow(normal, 0px 0px 5px rgba(0, 0, 0, 0.50))
         .slides
             li, li.flex-active-slide
                 background-color: #FFF
@@ -116,17 +129,72 @@ $magw: 640px
                 cursor: pointer
                 width: $gap
                 height: $gapxhalf
-                +opacity(20)
+                +opacity(100)
+                background-color: #ccc
                 &:hover, &.flex-active
                     width: $gapx4
                     +opacity(100)
                     background-color: #B30043
 
 
+.flex-control-nav li
+    +fadeInUp($delay: $delay + 400)
+    &:nth-of-type(2)
+        +fadeInUp($delay: ($delay * 2 + 400))
+    &:nth-of-type(3)
+        +fadeInUp($delay: ($delay * 3 + 400))
+    &:nth-of-type(4)
+        +fadeInUp($delay: ($delay * 4 + 400))
+    &:nth-of-type(5)
+        +fadeInUp($delay: ($delay * 5 + 400))
+    &:nth-of-type(6)
+        +fadeInUp($delay: ($delay * 6 + 400))
+    &:nth-of-type(7)
+        +fadeInUp($delay: ($delay * 7 + 400))
+    &:nth-of-type(8)
+        +fadeInUp($delay: ($delay * 8 + 400))
+    &:nth-of-type(9)
+        +fadeInUp($delay: ($delay * 9 + 400))
+    &:nth-of-type(10)
+        +fadeInUp($delay: ($delay * 10 + 400))
+    &:nth-of-type(11)
+        +fadeInUp($delay: ($delay * 11 + 400))
+    &:nth-of-type(12)
+        +fadeInUp($delay: ($delay * 12 + 400))
+    &:nth-of-type(13)
+        +fadeInUp($delay: ($delay * 13 + 400))
+    &:nth-of-type(14)
+        +fadeInUp($delay: ($delay * 14 + 400))
+    &:nth-of-type(15)
+        +fadeInUp($delay: ($delay * 15 + 400))
+    &:nth-of-type(16)
+        +fadeInUp($delay: ($delay * 16 + 400))
+    &:nth-of-type(17)
+        +fadeInUp($delay: ($delay * 17 + 400))
+    &:nth-of-type(18)
+        +fadeInUp($delay: ($delay * 18 + 400))
+    &:nth-of-type(19)
+        +fadeInUp($delay: ($delay * 19 + 400))
+    &:nth-of-type(20)
+        +fadeInUp($delay: ($delay * 20 + 400))
+    &:nth-of-type(21)
+        +fadeInUp($delay: ($delay * 21 + 400))
+    &:nth-of-type(22)
+        +fadeInUp($delay: ($delay * 22 + 400))
+    &:nth-of-type(23)
+        +fadeInUp($delay: ($delay * 23 + 400))
+    &:nth-of-type(24)
+        +fadeInUp($delay: ($delay * 24 + 400))
+    &:nth-of-type(25)
+        +fadeInUp($delay: ($delay * 25 + 400))
+    &:nth-of-type(26)
+        +fadeInUp($delay: ($delay * 26 + 400))
+
 .btn
     +transition
 
 .newsletter
+    background: none
     background-color: #fff
     padding: 30px
     .member
@@ -140,7 +208,11 @@ $magw: 640px
             +fadeIn
 .subscription
     width: $magw - 60px
+    background-color: #FFF
     height: $magh - 30px - 135px
+    iframe
+        width: $magw - 60px
+        height: 460px
     .lastpage &
         margin: 0 30px
 
@@ -153,8 +225,12 @@ $magw: 640px
     h1
         top: -20px
     h2
-        padding: 0 30px
-        bottom: 60px
+        padding: 0 10px 0 30px
+        bottom: 40px
+        &:nth-of-type(1)
+            bottom: 100px
+        &:nth-of-type(2)
+            font-size: 60px
     .first &
         background-image: url("../images/01/cover.jpg")
         background-size: cover
@@ -199,3 +275,5 @@ h2
     &:nth-of-type(4)
         left: $magw - 30px
 
+.flex-next
+    +pulse

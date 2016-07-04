@@ -10984,13 +10984,42 @@ p.eye {
     font-family: DIN;
     src: url("../fonts/DIN.svg#DIN") format("svg"); } }
 
+body {
+  position: relative;
+  z-index: 1;
+  background-size: 10px;
+  background-color: none;
+  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A%20width%3D%2736px%27%20height%3D%2736px%27%20viewBox%3D%270%200%2036%2036%27%20enable-background%3D%27new%200%200%2036%2036%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpath%20fill%3D%27#eeeeee%27%20d%3D%27M18%2C26c-4.418%2C0-8-3.583-8-8c0-4.418%2C3.582-8%2C8-8c4.417%2C0%2C8%2C3.582%2C8%2C8C26%2C22.417%2C22.417%2C26%2C18%2C26z%27/%3E%0A%3Cpath%20fill%3D%27#eeeeee%27%20d%3D%27M0%2C8c-4.418%2C0-8-3.583-8-8c0-4.418%2C3.582-8%2C8-8c4.417%2C0%2C8%2C3.582%2C8%2C8C8%2C4.417%2C4.417%2C8%2C0%2C8z%27/%3E%0A%3Cpath%20fill%3D%27#eeeeee%27%20d%3D%27M0%2C44c-4.418%2C0-8-3.583-8-8c0-4.419%2C3.582-8%2C8-8c4.417%2C0%2C8%2C3.581%2C8%2C8C8%2C40.417%2C4.417%2C44%2C0%2C44z%27/%3E%0A%3Cpath%20fill%3D%27#eeeeee%27%20d%3D%27M36%2C8c-4.419%2C0-8-3.583-8-8c0-4.418%2C3.581-8%2C8-8c4.417%2C0%2C8%2C3.582%2C8%2C8C44%2C4.417%2C40.417%2C8%2C36%2C8z%27/%3E%0A%3Cpath%20fill%3D%27#eeeeee%27%20d%3D%27M36%2C44c-4.419%2C0-8-3.583-8-8c0-4.419%2C3.581-8%2C8-8c4.417%2C0%2C8%2C3.581%2C8%2C8C44%2C40.417%2C40.417%2C44%2C36%2C44z%27/%3E%0A%3Cpath%20fill%3D%27white%27%20d%3D%27M36%2C28V8c-4.419%2C0-8-3.583-8-8H8c0%2C4.417-3.583%2C8-8%2C8v20c4.417%2C0%2C8%2C3.581%2C8%2C8h20C28%2C31.581%2C31.581%2C28%2C36%2C28z%0A%20M18%2C26c-4.418%2C0-8-3.583-8-8c0-4.418%2C3.582-8%2C8-8c4.417%2C0%2C8%2C3.582%2C8%2C8C26%2C22.417%2C22.417%2C26%2C18%2C26z%27/%3E%0A%3C/svg%3E");
+  heighT: 100vh; }
+
 .flexslider {
   width: 640px;
-  margin: 40px auto !important; }
+  position: relative;
+  margin: 0 auto !important;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  vertical-align: bottom !important; }
   .flexslider .flex-viewport {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     width: 640px;
     height: 900px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }
+    .flexslider .flex-viewport:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #FFF;
       height: 900px;
@@ -11007,10 +11036,11 @@ p.eye {
         cursor: pointer;
         width: 20px;
         height: 10px;
-        opacity: 0.2;
-        filter: "alpha(opacity=20)";
-        -khtml-opacity: 0.2;
-        -moz-opacity: 0.2; }
+        opacity: 1;
+        filter: "alpha(opacity=100)";
+        -khtml-opacity: 1;
+        -moz-opacity: 1;
+        background-color: #ccc; }
         .flexslider .flex-control-nav li a:hover, .flexslider .flex-control-nav li a.flex-active {
           width: 80px;
           opacity: 1;
@@ -11019,11 +11049,403 @@ p.eye {
           -moz-opacity: 1;
           background-color: #B30043; }
 
+.flex-control-nav li {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(2) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(3) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 700ms;
+    animation-delay: 700ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(4) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 800ms;
+    animation-delay: 800ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(5) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 900ms;
+    animation-delay: 900ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(6) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(7) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1100ms;
+    animation-delay: 1100ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(8) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(9) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1300ms;
+    animation-delay: 1300ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(10) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1400ms;
+    animation-delay: 1400ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(11) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1500ms;
+    animation-delay: 1500ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(12) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1600ms;
+    animation-delay: 1600ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(13) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1700ms;
+    animation-delay: 1700ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(14) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1800ms;
+    animation-delay: 1800ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(15) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1900ms;
+    animation-delay: 1900ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(16) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2000ms;
+    animation-delay: 2000ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(17) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2100ms;
+    animation-delay: 2100ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(18) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2200ms;
+    animation-delay: 2200ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(19) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2300ms;
+    animation-delay: 2300ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(20) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2400ms;
+    animation-delay: 2400ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(21) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2500ms;
+    animation-delay: 2500ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(22) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2600ms;
+    animation-delay: 2600ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(23) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2700ms;
+    animation-delay: 2700ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(24) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2800ms;
+    animation-delay: 2800ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(25) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 2900ms;
+    animation-delay: 2900ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flex-control-nav li:nth-of-type(26) {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+
 .btn {
   -webkit-transition: all 300ms ease-out !important;
   transition: all 300ms ease-out !important; }
 
 .newsletter {
+  background: none;
   background-color: #fff;
   padding: 30px; }
   .newsletter .member {
@@ -11052,7 +11474,11 @@ p.eye {
 
 .subscription {
   width: 580px;
+  background-color: #FFF;
   height: 735px; }
+  .subscription iframe {
+    width: 580px;
+    height: 460px; }
   .lastpage .subscription {
     margin: 0 30px; }
 
@@ -11066,8 +11492,12 @@ p.eye {
   top: -20px; }
 
 .cover h2 {
-  padding: 0 30px;
-  bottom: 60px; }
+  padding: 0 10px 0 30px;
+  bottom: 40px; }
+  .cover h2:nth-of-type(1) {
+    bottom: 100px; }
+  .cover h2:nth-of-type(2) {
+    font-size: 60px; }
 
 .first .cover {
   background-image: url("../images/01/cover.jpg");
@@ -11113,3 +11543,19 @@ h2 {
     bottom: 0; }
   .border:nth-of-type(4) {
     left: 610px; }
+
+.flex-next {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
