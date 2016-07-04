@@ -298,7 +298,6 @@ html.touch .hide-touch, html.no-touch .show-touch
 
 
 .share
-    +fadeInLeft($delay: 1.2s)
     padding: 100px 20px
     a
         +size(square, 30px)
@@ -311,6 +310,12 @@ html.touch .hide-touch, html.no-touch .show-touch
         font-size: 20px
         margin-left: -5px
         padding-top: 1px
+        .flex-active-slide &
+            +fadeInLeft
+            &:nth-of-type(2)
+                +fadeInLeft($delay: 300ms)
+            &:nth-of-type(3)
+                +fadeInLeft($delay: 600ms)
         i.fa-envelope
             font-size: 15px
             @include translate(0, -3)
