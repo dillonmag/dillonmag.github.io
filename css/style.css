@@ -11024,8 +11024,8 @@ body {
           transform: translateY(-50%);
   vertical-align: bottom !important; }
   .flexslider .flex-viewport {
-    -webkit-animation-name: fadeInLeftBig;
-    animation-name: fadeInLeftBig;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-duration: 1s;
