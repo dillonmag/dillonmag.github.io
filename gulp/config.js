@@ -45,6 +45,7 @@ var config = {
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',
           './bower_components/chosen/chosen.jquery.js',
+          './bower_components/screenfull/dist/screenfull.js',
           './app/js/*.js'],
     dest: './js',
     title: 'main.js'

@@ -9,6 +9,7 @@
     "modernizr": "~2.8.3",
     "detectizr": "2.2.0",
     "chosen": "~1.5.1",
-    "bootstrap-chosen": "~1.0.1"
+    "bootstrap-chosen": "~1.0.1",
+    "screenfull": "^3.0.0"
   }
 }

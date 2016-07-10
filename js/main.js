@@ -14782,6 +14782,152 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 
 }).call(this);
 
+/*!
+* screenfull
+* v3.0.0 - 2015-11-24
+* (c) Sindre Sorhus; MIT License
+*/
+(function () {
+	'use strict';
+
+	var isCommonjs = typeof module !== 'undefined' && module.exports;
+	var keyboardAllowed = typeof Element !== 'undefined' && 'ALLOW_KEYBOARD_INPUT' in Element;
+
+	var fn = (function () {
+		var val;
+		var valLength;
+
+		var fnMap = [
+			[
+				'requestFullscreen',
+				'exitFullscreen',
+				'fullscreenElement',
+				'fullscreenEnabled',
+				'fullscreenchange',
+				'fullscreenerror'
+			],
+			// new WebKit
+			[
+				'webkitRequestFullscreen',
+				'webkitExitFullscreen',
+				'webkitFullscreenElement',
+				'webkitFullscreenEnabled',
+				'webkitfullscreenchange',
+				'webkitfullscreenerror'
+
+			],
+			// old WebKit (Safari 5.1)
+			[
+				'webkitRequestFullScreen',
+				'webkitCancelFullScreen',
+				'webkitCurrentFullScreenElement',
+				'webkitCancelFullScreen',
+				'webkitfullscreenchange',
+				'webkitfullscreenerror'
+
+			],
+			[
+				'mozRequestFullScreen',
+				'mozCancelFullScreen',
+				'mozFullScreenElement',
+				'mozFullScreenEnabled',
+				'mozfullscreenchange',
+				'mozfullscreenerror'
+			],
+			[
+				'msRequestFullscreen',
+				'msExitFullscreen',
+				'msFullscreenElement',
+				'msFullscreenEnabled',
+				'MSFullscreenChange',
+				'MSFullscreenError'
+			]
+		];
+
+		var i = 0;
+		var l = fnMap.length;
+		var ret = {};
+
+		for (; i < l; i++) {
+			val = fnMap[i];
+			if (val && val[1] in document) {
+				for (i = 0, valLength = val.length; i < valLength; i++) {
+					ret[fnMap[0][i]] = val[i];
+				}
+				return ret;
+			}
+		}
+
+		return false;
+	})();
+
+	var screenfull = {
+		request: function (elem) {
+			var request = fn.requestFullscreen;
+
+			elem = elem || document.documentElement;
+
+			// Work around Safari 5.1 bug: reports support for
+			// keyboard in fullscreen even though it doesn't.
+			// Browser sniffing, since the alternative with
+			// setTimeout is even worse.
+			if (/5\.1[\.\d]* Safari/.test(navigator.userAgent)) {
+				elem[request]();
+			} else {
+				elem[request](keyboardAllowed && Element.ALLOW_KEYBOARD_INPUT);
+			}
+		},
+		exit: function () {
+			document[fn.exitFullscreen]();
+		},
+		toggle: function (elem) {
+			if (this.isFullscreen) {
+				this.exit();
+			} else {
+				this.request(elem);
+			}
+		},
+		raw: fn
+	};
+
+	if (!fn) {
+		if (isCommonjs) {
+			module.exports = false;
+		} else {
+			window.screenfull = false;
+		}
+
+		return;
+	}
+
+	Object.defineProperties(screenfull, {
+		isFullscreen: {
+			get: function () {
+				return Boolean(document[fn.fullscreenElement]);
+			}
+		},
+		element: {
+			enumerable: true,
+			get: function () {
+				return document[fn.fullscreenElement];
+			}
+		},
+		enabled: {
+			enumerable: true,
+			get: function () {
+				// Coerce to boolean in case of old WebKit
+				return Boolean(document[fn.fullscreenEnabled]);
+			}
+		}
+	});
+
+	if (isCommonjs) {
+		module.exports = screenfull;
+	} else {
+		window.screenfull = screenfull;
+	}
+})();
+
 /*
  * jQuery FlexSlider v2.6.0
  * Copyright 2012 WooThemes
@@ -15978,32 +16124,7 @@ window.Detectizr = (function(window, navigator, document, undefined) {
   };
 })(jQuery);
 
-// var config = {
-//   '.chosen-select': {},
-//   '.chosen-select-deselect': {allow_single_deselect: true},
-//   '.chosen-select-no-single': {disable_search_threshold: 10},
-//   '.chosen-select-no-results': {no_results_text: 'Nothing found'},
-//   '.chosen-select-width': {width: '95%'}
-// };
-// for (var selector in config) {
-//   $(selector).chosen(config[selector]);
-// }
 
-// $(function() {
-//   $('[data-toggle="tooltip"]').tooltip();
-// });
-// $(function() {
-//   $('[data-toggle="popover"]').popover();
-// });
-// $('body').on('click', function(e) {
-//   $('[data-toggle="popover"]').each(function() {
-//     //the 'is' for buttons that trigger popups
-//     //the 'has' for icons within a button that triggers a popup
-//     if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-//       $(this).popover('hide');
-//     }
-//   });
-// });
 
 $('.flexslider').flexslider({
     animation: "slide",
@@ -16025,4 +16146,52 @@ $('.flexslider').flexslider({
 });
 
 
+$(function () {
+    $('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
 
+    if (!screenfull.enabled) {
+        return false;
+    }
+
+    $('#request').click(function () {
+        screenfull.request($('#container')[0]);
+        // does not require jQuery, can be used like this too:
+        // screenfull.request(document.getElementById('container'));
+    });
+
+    $('#exit').click(function () {
+        screenfull.exit();
+    });
+
+    $('#toggle').click(function () {
+        screenfull.toggle($('#container')[0]);
+    });
+
+    $('#request2').click(function () {
+        screenfull.request();
+    });
+
+    $('#demo-img').click(function () {
+        screenfull.toggle(this);
+    });
+
+    function fullscreenchange() {
+        var elem = screenfull.element;
+
+        $('#status').text('Is fullscreen: ' + screenfull.isFullscreen);
+
+        if (elem) {
+            $('#element').text('Element: ' + elem.localName + (elem.id ? '#' + elem.id : ''));
+        }
+
+        if (!screenfull.isFullscreen) {
+            $('#external-iframe').remove();
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    document.addEventListener(screenfull.raw.fullscreenchange, fullscreenchange);
+
+    // set the initial values
+    fullscreenchange();
+});
