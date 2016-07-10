@@ -11701,8 +11701,7 @@ html.touch .hide-touch, html.no-touch .show-touch {
       color: #666; }
 
 .mag01 .spread1 {
-  background-size: cover;
-  background-color: #ffff99 !important; }
+  background-size: cover; }
   .mag01 .spread1.page1 {
     background-image: url("../images/01/spread1/01.png"); }
   .mag01 .spread1.page2 {
@@ -11715,6 +11714,18 @@ html.touch .hide-touch, html.no-touch .show-touch {
     background-image: url("../images/01/spread1/05.png"); }
   .mag01 .spread1.page6 {
     background-image: url("../images/01/spread1/06.png"); }
+  .mag01 .spread1.page7 {
+    background-image: url("../images/01/spread1/07.png"); }
+  .mag01 .spread1.page8 {
+    background-image: url("../images/01/spread1/08.png"); }
+  .mag01 .spread1.page9 {
+    background-image: url("../images/01/spread1/09.png"); }
+  .mag01 .spread1.page10 {
+    background-image: url("../images/01/spread1/10.png"); }
+  .mag01 .spread1.page11 {
+    background-image: url("../images/01/spread1/11.png"); }
+  .mag01 .spread1.page12 {
+    background-image: url("../images/01/spread1/12.png"); }
 
 .mag01 .spread2 {
   background-size: cover; }
@@ -11730,3 +11741,15 @@ html.touch .hide-touch, html.no-touch .show-touch {
     background-image: url("../images/01/spread2/05.png"); }
   .mag01 .spread2.page6 {
     background-image: url("../images/01/spread2/06.png"); }
+  .mag01 .spread2.page7 {
+    background-image: url("../images/01/spread2/07.png"); }
+  .mag01 .spread2.page8 {
+    background-image: url("../images/01/spread2/08.png"); }
+  .mag01 .spread2.page9 {
+    background-image: url("../images/01/spread2/09.png"); }
+  .mag01 .spread2.page10 {
+    background-image: url("../images/01/spread2/10.png"); }
+  .mag01 .spread2.page11 {
+    background-image: url("../images/01/spread2/11.png"); }
+  .mag01 .spread2.page12 {
+    background-image: url("../images/01/spread2/12.png"); }

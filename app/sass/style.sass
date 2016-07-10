@@ -323,35 +323,36 @@ html.touch .hide-touch, html.no-touch .show-touch
             background-color: transparent
             color: #666
 
+=spread($mag: '01', $spread: 'spread1')
+    .#{$spread}
+        background-size: cover
+        &.page1
+            background-image: url("../images/#{$mag}/#{$spread}/01.png")
+        &.page2
+            background-image: url("../images/#{$mag}/#{$spread}/02.png")
+        &.page3
+            background-image: url("../images/#{$mag}/#{$spread}/03.png")
+        &.page4
+            background-image: url("../images/#{$mag}/#{$spread}/04.png")
+        &.page5
+            background-image: url("../images/#{$mag}/#{$spread}/05.png")
+        &.page6
+            background-image: url("../images/#{$mag}/#{$spread}/06.png")
+        &.page7
+            background-image: url("../images/#{$mag}/#{$spread}/07.png")
+        &.page8
+            background-image: url("../images/#{$mag}/#{$spread}/08.png")
+        &.page9
+            background-image: url("../images/#{$mag}/#{$spread}/09.png")
+        &.page10
+            background-image: url("../images/#{$mag}/#{$spread}/10.png")
+        &.page11
+            background-image: url("../images/#{$mag}/#{$spread}/11.png")
+        &.page12
+            background-image: url("../images/#{$mag}/#{$spread}/12.png")
+
 .mag01
-    .spread1
-        background-size: cover
-        background-color: lighten(yellow, 30%) !important
-        &.page1
-            background-image: url("../images/01/spread1/01.png")
-        &.page2
-            background-image: url("../images/01/spread1/02.png")
-        &.page3
-            background-image: url("../images/01/spread1/03.png")
-        &.page4
-            background-image: url("../images/01/spread1/04.png")
-        &.page5
-            background-image: url("../images/01/spread1/05.png")
-        &.page6
-            background-image: url("../images/01/spread1/06.png")
-    .spread2
-        background-size: cover
-        &.page1
-            background-image: url("../images/01/spread2/01.png")
-        &.page2
-            background-image: url("../images/01/spread2/02.png")
-        &.page3
-            background-image: url("../images/01/spread2/03.png")
-        &.page4
-            background-image: url("../images/01/spread2/04.png")
-        &.page5
-            background-image: url("../images/01/spread2/05.png")
-        &.page6
-            background-image: url("../images/01/spread2/06.png")
+    +spread($mag: '01', $spread: 'spread1')
+    +spread($mag: '01', $spread: 'spread2')
 
 
