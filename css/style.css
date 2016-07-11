@@ -11754,16 +11754,14 @@ html.touch .hide-touch, html.no-touch .show-touch {
   .mag01 .spread2.page12 {
     background-image: url("../images/01/spread2/12.png"); }
 
-.btn.btn-round {
-  border-radius: 50%;
-  background-clip: padding-box;
+.btn.btn-icon {
   padding: 5px 4px 4px 8px;
   height: 30px;
   width: 30px;
   margin: 0; }
 
 #toggle {
-  position: fixed;
+  position: absolute;
   top: 5px;
   righT: 5px;
   opacity: 0.4;
