@@ -10957,28 +10957,52 @@ p.eye {
   padding: 20px; }
 
 .flexslider {
-  width: 639.999px; }
+  width: 71.111vw; }
   .flexslider .flex-viewport {
-    width: 639.999px;
-    height: 900px; }
+    width: 71.111vw;
+    height: 100vw; }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
-      height: 900px;
-      width: 639.999px; }
+      height: 100vw;
+      width: 71.111vw; }
 
 .subscription {
-  width: 579.999px;
-  height: 735px; }
+  width: 65.111vw;
+  height: 87vw; }
   .subscription iframe {
-    width: 579.999px; }
+    width: 65.111vw; }
 
 .border:nth-of-type(2n-1) {
-  width: 639.999px; }
+  width: 71.111vw; }
 
 .border:nth-of-type(2n) {
-  height: 900px; }
+  height: 100vw; }
 
 .border:nth-of-type(4) {
-  left: 609.999px; }
+  left: 68.111vw; }
+
+.cover h1 {
+  top: -1vw; }
+
+.cover h2 {
+  padding: 0 2vw 0 2vw; }
+  .cover h2:nth-of-type(1) {
+    bottom: 12vw; }
+  .cover h2:nth-of-type(2) {
+    font-size: 8vw; }
+
+h1 {
+  font-size: 15vw; }
+
+h2 {
+  font-size: 10vw; }
+  h2.pending {
+    font-size: 70px; }
+
+.instructions {
+  margin-left: 56.111vw; }
+
+.mag01 h1, .mag01 h2, .mag01 h3 {
+  color: #A52749 !important; }
 
 @font-face {
   font-family: rakoon;
@@ -11504,35 +11528,20 @@ body {
   position: absolute;
   left: 0; }
 
-.cover h1 {
-  top: -20px; }
-
 .cover h2 {
-  padding: 0 10px 0 30px;
   bottom: 40px; }
-  .cover h2:nth-of-type(1) {
-    bottom: 100px; }
-  .cover h2:nth-of-type(2) {
-    font-size: 60px; }
 
 .first .cover {
   background-image: url("../images/01/cover.jpg");
   background-size: cover; }
 
-.first h1, .first h2, .first h3 {
-  color: #A52749 !important; }
-
 h1 {
   font-family: rakoon;
-  padding: 0 30px;
-  font-size: 120px; }
+  padding: 0 30px; }
 
-h2 {
-  font-size: 80px; }
-  h2.pending {
-    text-align: center;
-    font-size: 70px;
-    margin-top: 50%; }
+h2.pending {
+  text-align: center;
+  margin-top: 50%; }
 
 .first .backcover {
   background-image: url("../images/01/cover.jpg");
@@ -11587,7 +11596,6 @@ html.touch .hide-touch, html.no-touch .show-touch {
   font-size: 18px;
   line-height: 100%;
   display: table;
-  margin-left: 480px;
   padding: 20px;
   width: 120px;
   height: 120px;

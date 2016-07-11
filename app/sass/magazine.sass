@@ -1,4 +1,4 @@
-=magazine($height: 900px, $ratio: .71111)
+=magazine($height: 100vw, $ratio: .71111)
     .flexslider
         width: ($height * $ratio)
         .flex-viewport
@@ -9,16 +9,41 @@
                     height: $height
                     width: ($height * $ratio)
     .subscription
-        width: ($height * $ratio) - 60px
-        height: $height - 30px - 135px
+        width: ($height * $ratio) - 6
+        height: $height - 3 - 10
         iframe
-            width: ($height * $ratio) - 60px
+            width: ($height * $ratio) - 6
     .border
         &:nth-of-type(2n-1)
             width: ($height * $ratio)
         &:nth-of-type(2n)
             height: $height
         &:nth-of-type(4)
-            left: ($height * $ratio) - 30px
+            left: ($height * $ratio) - 3
+    .cover
+        h1
+            top: ($height * -.01)
+        h2
+            padding: 0 ($height * .02) 0 ($height * .02)
+            &:nth-of-type(1)
+                bottom: ($height * .12)
+            &:nth-of-type(2)
+                font-size: ($height * .08)
+    h1
+        font-size: ($height * .15)
+    h2
+        font-size: ($height * .1)
+        &.pending
+            font-size: 70px
+    .instructions
+        margin-left: ($height * $ratio) - 15
+
 
 +magazine
+
+=issue($mag: mag01, $color: #A52749)
+    .#{$mag}
+        h1, h2, h3
+            color: $color !important
+
++issue(mag01, #A52749)
