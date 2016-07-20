@@ -73,6 +73,12 @@ body
                 width: 100%
                 float: none
                 padding: 0 15px !important
+    +media(ipad, portrait)
+        +magazine(800px, 10px)
+    +media(iphone5, portrait)
+        +magazine(400px, 10px)
+        *
+            +find(red)
 
 
 

@@ -10932,9 +10932,7 @@ html[xmlns] .flexslider .slides {
       -webkit-transform: rotate(-5deg);
       transform: rotate(-5deg);
       background-color: #00b300;
-      padding: 0 10px 0 30px;
       display: inline-block;
-      margin: 0 0 -10px -10px;
       color: white !important; }
   .text div {
     width: 50%;
@@ -11065,6 +11063,114 @@ body {
           width: 100%;
           float: none;
           padding: 0 15px !important; } }
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 16px; }
+      body .text {
+        height: 800px; }
+        body .text h1, body .text h2 {
+          font-size: 20px; }
+        body .text h3 {
+          margin-top: 10px; }
+        body .text h1, body .text h2, body .text h3 {
+          padding: 0 3.33333px 0 10px;
+          margin: 0 0 -3.3px -3.3px; }
+        body .text div:first-of-type {
+          padding-right: 5px;
+          padding-left: 20px; }
+        body .text div:nth-of-type(2) {
+          padding-left: 5px;
+          padding-right: 20px; }
+      body .flexslider {
+        width: 568.888px; }
+        body .flexslider .flex-viewport {
+          width: 568.888px;
+          height: 800px; }
+          body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
+            height: 800px;
+            width: 568.888px; }
+      body .subscription {
+        width: 548.888px;
+        height: 655px; }
+        body .subscription iframe {
+          width: 508.888px; }
+      body .border:nth-of-type(2n-1) {
+        width: 568.888px; }
+      body .border:nth-of-type(2n) {
+        height: 800px; }
+      body .border:nth-of-type(4) {
+        left: 558.888px; }
+      body .cover h1 {
+        top: -8px; }
+      body .cover h2 {
+        padding: 0 16px 0 16px; }
+        body .cover h2:nth-of-type(1) {
+          bottom: 96px; }
+        body .cover h2:nth-of-type(2) {
+          font-size: 64px; }
+      body h1 {
+        font-size: 120px; }
+      body h2 {
+        font-size: 80px; }
+        body h2.pending {
+          font-size: 10px; }
+      body .instructions {
+        margin-left: 553.888px; } }
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 8px; }
+      body .text {
+        height: 400px; }
+        body .text h1, body .text h2 {
+          font-size: 20px; }
+        body .text h3 {
+          margin-top: 10px; }
+        body .text h1, body .text h2, body .text h3 {
+          padding: 0 3.33333px 0 10px;
+          margin: 0 0 -3.3px -3.3px; }
+        body .text div:first-of-type {
+          padding-right: 5px;
+          padding-left: 20px; }
+        body .text div:nth-of-type(2) {
+          padding-left: 5px;
+          padding-right: 20px; }
+      body .flexslider {
+        width: 284.444px; }
+        body .flexslider .flex-viewport {
+          width: 284.444px;
+          height: 400px; }
+          body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
+            height: 400px;
+            width: 284.444px; }
+      body .subscription {
+        width: 264.444px;
+        height: 255px; }
+        body .subscription iframe {
+          width: 224.444px; }
+      body .border:nth-of-type(2n-1) {
+        width: 284.444px; }
+      body .border:nth-of-type(2n) {
+        height: 400px; }
+      body .border:nth-of-type(4) {
+        left: 274.444px; }
+      body .cover h1 {
+        top: -4px; }
+      body .cover h2 {
+        padding: 0 8px 0 8px; }
+        body .cover h2:nth-of-type(1) {
+          bottom: 48px; }
+        body .cover h2:nth-of-type(2) {
+          font-size: 32px; }
+      body h1 {
+        font-size: 60px; }
+      body h2 {
+        font-size: 40px; }
+        body h2.pending {
+          font-size: 10px; }
+      body .instructions {
+        margin-left: 269.444px; }
+      body * {
+        border: dashed 1px red !important; } }
 
 .mag01 h1, .mag01 h2, .mag01 h3 {
   color: #A52749 !important; }
