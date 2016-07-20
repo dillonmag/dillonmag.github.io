@@ -1,4 +1,21 @@
-=magazine($height: 100vw, $ratio: .71111)
+=magazine($height: 900px, $margin: 30px, $ratio: .71111)
+    font-size: ($height * .02)
+    .text
+        height: $height
+        h1, h2
+            font-size: ($margin * 2)
+        h3
+            margin-top: $margin
+        h1, h2, h3
+            padding: 0 ($margin / 3) 0 $margin
+            margin: 0 0 ($margin * -.33) ($margin * -.33)
+        div
+            &:first-of-type
+                padding-right: ($margin / 2)
+                padding-left: ($margin * 2)
+            &:nth-of-type(2)
+                padding-left: ($margin / 2)
+                padding-right: ($margin * 2)
     .flexslider
         width: ($height * $ratio)
         .flex-viewport
@@ -9,17 +26,17 @@
                     height: $height
                     width: ($height * $ratio)
     .subscription
-        width: ($height * $ratio) - 6
-        height: $height - 3 - 10
+        width: ($height * $ratio) - ($margin * 2)
+        height: $height - $margin - 135px
         iframe
-            width: ($height * $ratio) - 6
+            width: ($height * $ratio) - 60px
     .border
         &:nth-of-type(2n-1)
             width: ($height * $ratio)
         &:nth-of-type(2n)
             height: $height
         &:nth-of-type(4)
-            left: ($height * $ratio) - 3
+            left: ($height * $ratio) - $margin
     .cover
         h1
             top: ($height * -.01)
@@ -34,12 +51,32 @@
     h2
         font-size: ($height * .1)
         &.pending
-            font-size: 70px
+            font-size: $margin
     .instructions
         margin-left: ($height * $ratio) - 15
 
+body
+    +magazine
+    +media(700px, max, height)
+        +magazine(600px, 20px)
+        font-size: 13px
+        p.eye
+            font-size: 20px
+            line-height: 20px
+            padding: 15px
+        .text
+            overflow: auto !important
+            padding-bottom: 15px
+            h3
+                margin-top: 20px
+            div
+                width: 100%
+                float: none
+                padding: 0 15px !important
 
-+magazine
+
+
+
 
 =issue($mag: mag01, $color: #A52749)
     .#{$mag}
@@ -47,3 +84,8 @@
             color: $color !important
 
 +issue(mag01, #A52749)
+
+$bp: 600px
+
+
+

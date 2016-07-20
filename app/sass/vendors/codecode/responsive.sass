@@ -35,7 +35,7 @@ $screen-lg: 1200px
   #{$parent}:not(.#{$target}) &
     @content
 
-=media($device: ipad, $scope: strict, $variation: mini)
+=media($device: ipad, $scope: strict, $position: width, $variation: mini)
   @if $device == "ipad"
     @if $scope == "portrait"
       @media only screen and (max-width: 768px)
@@ -87,7 +87,7 @@ $screen-lg: 1200px
       @media only screen and (min-device-width: 414px) and (max-device-width: 736px)
         @content
   @else
-    @media screen and ($scope + -width: $device)
+    @media screen and (#{$scope}-#{$position}: $device)
       @content
 
 // ('ㅅ')づ devices rules
@@ -113,4 +113,5 @@ html.safari .hidden-safari,
 html:not(.touch) .visible-touch,
 html.touch .hidden-touch, .hidden
   display: none !important
+
 
