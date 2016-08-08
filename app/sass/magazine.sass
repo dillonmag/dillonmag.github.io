@@ -74,11 +74,14 @@ body
                 float: none
                 padding: 0 15px !important
     +media(ipad, portrait)
-        +magazine(800px, 10px)
+        +magazine(950px, 10px)
     +media(iphone5, portrait)
-        +magazine(400px, 10px)
-        *
-            +find(red)
+        +magazine(425px, 10px)
+        .flexslider .flex-control-nav li
+            a, a:hover, a.flex-active
+                width: 10px
+                +radius(normal, 50%)
+
 
 
 

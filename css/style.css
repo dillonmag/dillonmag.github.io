@@ -11065,9 +11065,9 @@ body {
           padding: 0 15px !important; } }
   @media only screen and (max-width: 768px) {
     body {
-      font-size: 16px; }
+      font-size: 19px; }
       body .text {
-        height: 800px; }
+        height: 950px; }
         body .text h1, body .text h2 {
           font-size: 20px; }
         body .text h3 {
@@ -11082,45 +11082,45 @@ body {
           padding-left: 5px;
           padding-right: 20px; }
       body .flexslider {
-        width: 568.888px; }
+        width: 675.5545px; }
         body .flexslider .flex-viewport {
-          width: 568.888px;
-          height: 800px; }
+          width: 675.5545px;
+          height: 950px; }
           body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
-            height: 800px;
-            width: 568.888px; }
+            height: 950px;
+            width: 675.5545px; }
       body .subscription {
-        width: 548.888px;
-        height: 655px; }
+        width: 655.5545px;
+        height: 805px; }
         body .subscription iframe {
-          width: 508.888px; }
+          width: 615.5545px; }
       body .border:nth-of-type(2n-1) {
-        width: 568.888px; }
+        width: 675.5545px; }
       body .border:nth-of-type(2n) {
-        height: 800px; }
+        height: 950px; }
       body .border:nth-of-type(4) {
-        left: 558.888px; }
+        left: 665.5545px; }
       body .cover h1 {
-        top: -8px; }
+        top: -9.5px; }
       body .cover h2 {
-        padding: 0 16px 0 16px; }
+        padding: 0 19px 0 19px; }
         body .cover h2:nth-of-type(1) {
-          bottom: 96px; }
+          bottom: 114px; }
         body .cover h2:nth-of-type(2) {
-          font-size: 64px; }
+          font-size: 76px; }
       body h1 {
-        font-size: 120px; }
+        font-size: 142.5px; }
       body h2 {
-        font-size: 80px; }
+        font-size: 95px; }
         body h2.pending {
           font-size: 10px; }
       body .instructions {
-        margin-left: 553.888px; } }
+        margin-left: 660.5545px; } }
   @media only screen and (max-width: 320px) {
     body {
-      font-size: 8px; }
+      font-size: 8.5px; }
       body .text {
-        height: 400px; }
+        height: 425px; }
         body .text h1, body .text h2 {
           font-size: 20px; }
         body .text h3 {
@@ -11135,42 +11135,44 @@ body {
           padding-left: 5px;
           padding-right: 20px; }
       body .flexslider {
-        width: 284.444px; }
+        width: 302.22175px; }
         body .flexslider .flex-viewport {
-          width: 284.444px;
-          height: 400px; }
+          width: 302.22175px;
+          height: 425px; }
           body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
-            height: 400px;
-            width: 284.444px; }
+            height: 425px;
+            width: 302.22175px; }
       body .subscription {
-        width: 264.444px;
-        height: 255px; }
+        width: 282.22175px;
+        height: 280px; }
         body .subscription iframe {
-          width: 224.444px; }
+          width: 242.22175px; }
       body .border:nth-of-type(2n-1) {
-        width: 284.444px; }
+        width: 302.22175px; }
       body .border:nth-of-type(2n) {
-        height: 400px; }
+        height: 425px; }
       body .border:nth-of-type(4) {
-        left: 274.444px; }
+        left: 292.22175px; }
       body .cover h1 {
-        top: -4px; }
+        top: -4.25px; }
       body .cover h2 {
-        padding: 0 8px 0 8px; }
+        padding: 0 8.5px 0 8.5px; }
         body .cover h2:nth-of-type(1) {
-          bottom: 48px; }
+          bottom: 51px; }
         body .cover h2:nth-of-type(2) {
-          font-size: 32px; }
+          font-size: 34px; }
       body h1 {
-        font-size: 60px; }
+        font-size: 63.75px; }
       body h2 {
-        font-size: 40px; }
+        font-size: 42.5px; }
         body h2.pending {
           font-size: 10px; }
       body .instructions {
-        margin-left: 269.444px; }
-      body * {
-        border: dashed 1px red !important; } }
+        margin-left: 287.22175px; }
+      body .flexslider .flex-control-nav li a, body .flexslider .flex-control-nav li a:hover, body .flexslider .flex-control-nav li a.flex-active {
+        width: 10px;
+        border-radius: 50%;
+        background-clip: padding-box; } }
 
 .mag01 h1, .mag01 h2, .mag01 h3 {
   color: #A52749 !important; }
