@@ -1,0 +1,4 @@
+.select
+  +stamp($icon: $fa-var-angle-down, $position: right, $padding: 10px, $nudge: 7px, $color: $color-link-hover)
+select
+  +stamp($icon: $fa-var-check, $position: right)

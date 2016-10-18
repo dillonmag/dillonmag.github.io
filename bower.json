@@ -1,5 +1,5 @@
 {
-  "name": "Nyadi",
+  "name": "Dillon",
   "version": "1.2.0",
   "dependencies": {
     "jquery": "~2.1.1",
@@ -10,6 +10,7 @@
     "detectizr": "2.2.0",
     "chosen": "~1.5.1",
     "bootstrap-chosen": "~1.0.1",
-    "screenfull": "^3.0.0"
+    "semantic-ui-sass": "*",
+    "clipboard": "^1.5.12"
   }
 }

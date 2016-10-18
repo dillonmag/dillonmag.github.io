@@ -4,11 +4,11 @@ pngquant = require('imagemin-pngquant'),
 config = require('../config');
 
 gulp.task('imagemin', function(){
-  return gulp.src(config.imagemin.src)
+  return gulp.src(config.main.src + config.imagemin.src)
   .pipe($.cache($.imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
     use: [pngquant()]
   })))
-  .pipe(gulp.dest(config.imagemin.dest))
+  .pipe(gulp.dest(config.main.dest + config.imagemin.dest))
 });

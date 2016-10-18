@@ -1103,7 +1103,7 @@
     easing: "swing",                //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
     direction: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"
     reverse: false,                 //{NEW} Boolean: Reverse the animation direction
-    animationLoop: false,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+    animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
     smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
     startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
     slideshow: true,                //Boolean: Animate slider automatically
@@ -1125,8 +1125,8 @@
     // Primary Controls
     controlNav: true,               //Boolean: Create navigation for paging control of each slide? Note: Leave true for manualControls usage
     directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
-    prevText: "",           //String: Set the text for the "previous" directionNav item
-    nextText: "",               //String: Set the text for the "next" directionNav item
+    prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+    nextText: "Next",               //String: Set the text for the "next" directionNav item
 
     // Secondary Navigation
     keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys

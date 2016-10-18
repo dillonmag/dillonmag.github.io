@@ -52,8 +52,6 @@
         font-size: ($height * .1)
         &.pending
             font-size: $margin
-    .instructions
-        margin-left: ($height * $ratio) - 15
 
 body
     +magazine
@@ -82,19 +80,31 @@ body
                 width: 10px
                 +radius(normal, 50%)
 
-
-
-
-
-
-=issue($mag: mag01, $color: #A52749)
-    .#{$mag}
-        h1, h2, h3
-            color: $color !important
-
-+issue(mag01, #A52749)
-
-$bp: 600px
-
-
+=spread($mag: 'mag1', $spread: 'spread1')
+    li.#{$spread}
+        background-size: cover
+        &.page1
+            background-image: url("/images/#{$mag}/#{$spread}/01.png")
+        &.page2
+            background-image: url("/images/#{$mag}/#{$spread}/02.png")
+        &.page3
+            background-image: url("/images/#{$mag}/#{$spread}/03.png")
+        &.page4
+            background-image: url("/images/#{$mag}/#{$spread}/04.png")
+        &.page5
+            background-image: url("/images/#{$mag}/#{$spread}/05.png")
+        &.page6
+            background-image: url("/images/#{$mag}/#{$spread}/06.png")
+        &.page7
+            background-image: url("/images/#{$mag}/#{$spread}/07.png")
+        &.page8
+            background-image: url("/images/#{$mag}/#{$spread}/08.png")
+        &.page9
+            background-image: url("/images/#{$mag}/#{$spread}/09.png")
+        &.page10
+            background-image: url("/images/#{$mag}/#{$spread}/10.png")
+        &.page11
+            background-image: url("/images/#{$mag}/#{$spread}/11.png")
+        &.page12
+            background-image: url("/images/#{$mag}/#{$spread}/12.png")
 

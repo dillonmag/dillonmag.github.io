@@ -5,5 +5,5 @@ config = require('../config');
 gulp.task('js', function() {
   return gulp.src(config.js.src)
     .pipe($.concat(config.js.title))
-    .pipe(gulp.dest(config.js.dest));
+    .pipe(gulp.dest(config.main.dest + config.js.dest));
 });

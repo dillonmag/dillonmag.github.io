@@ -6,14 +6,15 @@ config = require('../config');
 // moves dist to gh-pages
 
 gulp.task('gh-pages', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src(config.main.dest + '**/*')
   .pipe($.ghPages());
 });
 
 
 gulp.task('publish', function(callback) {
   runSequence(
-    // ['uncss'],
+    ['inlineCss'],
+    ['uncss'],
     ['gh-pages'],
     callback
     );

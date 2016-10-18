@@ -1,58 +1,77 @@
 var config = {
+  main: {
+        src: './app/',
+        // inject:root
+        dest: './'
+        // endinject
+},
   sass: {
-    src: './app/sass/style.sass',
-    dest: './css',
+    src: 'sass/style.sass',
+    dest: 'css',
     error: 'Error Running SASS'
   },
-  todo: {
-    src: ['./app/**/*.+(js|html|sass|scss)', '!./app/sass/vendors/**/*.*', '!./app/js/vendors/**/*.*'],
-    dest: './'
+   favicon: {
+    windowsBackgroundColor: '#eeeeee',
+    androidChromeThemeColor: '#eeeeee',
+    name: 'codecode/',
+    safariPinnedTabThemeColor: '#eeeeee'
+  },
+      root: {
+    src: './gulp/config.js',
+    dest: './gulp/'
+  },
+    frameworkSass: {
+    src: 'sass/vendors/framework.sass',
+    dest: 'sass/vendors/'
+  },
+      frameworkJs: {
+    src: './gulp/config.js',
+    dest: './gulp/'
   },
   uncss: {
-    src: './css/style.css',
-    dest: './css',
-    html: ['./*.html'],
-    ignore: [/.chosen/, /.popover/, /.calendar/, /.flexslider/]
+    src: 'css/style.css',
+    dest: 'css',
+    html: '**/*.html',
+    ignore: [/.chosen/, /.popover/, /.calendar/, /.modal/]
+  },
+  inlineCss: {
+    src: '*-mail.html'
   },
   nunjucks: {
-    src: './app/pages/**/*.*',
-    dest: './',
+    src: 'pages/**/*.*',
     error: 'Error Running Nunjucks',
-    template: './app/templates/',
-    watch: './app/templates/**/*',
-    data: './app/data/generated/data.json'
+    template: 'templates/',
+    watch: 'templates/**/*',
+    data: 'data/generated/data.json'
   },
-  // ghPages: {
-  //   src: './dist/**/*'
-  // },
-  browserSync: {
-    baseDir: './'
-  },
-  svgSprites: {
-    src: './app/svg/*.svg',
-    dest: './',
-    cssFile: 'svg.scss',
-    generated: './app/sass/generated',
-    filter: '**/*.svg'
+  ghPages: {
+    src: '**/*'
   },
   imagemin: {
-     src: './app/images/**/*.+(png|jpg|jpeg|gif|svg)',
-    dest: './images'
+     src: 'images/**/*.+(png|jpg|jpeg|gif|svg)',
+    dest: 'images'
   },
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
-          './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+          // inject:framework
+          './bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
+          // endinject
+          // inject:flexslider
+          './app/js/flexslider.js',
+          // endinject
+          // inject:clipboard
+
+          // endinject
           './bower_components/modernizr/modernizr.js',
           './bower_components/detectizr/dist/detectizr.js',
           './bower_components/chosen/chosen.jquery.js',
-          './bower_components/screenfull/dist/screenfull.js',
           './app/js/*.js'],
-    dest: './js',
+    dest: 'js',
     title: 'main.js'
   },
   json: {
-    src: './app/data/*.json',
-    dest: './app/data/generated',
+    src: 'data/*.json',
+    dest: 'data/generated',
     error: 'Error Running JSON extend',
     file: 'data.json'
   }

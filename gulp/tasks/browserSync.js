@@ -5,7 +5,7 @@ config = require('../config');
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: config.browserSync.baseDir
+      baseDir: config.main.dest
     },
   })
 })

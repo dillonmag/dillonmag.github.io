@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block mag %}mag1{% endblock %}
+{% block content %}
+
+<div class="flexslider">
+  <ul class="slides">
+   <li class="cover">
+    {% include "partials/brand.html" %}
+        {% include "macros/title.html" %}
+ {% import "macros/title.html" as title %}
+ {{ title.title(number="1", title="I like to draw shit") }}
+    {% include "partials/instructions.html" %}
+
+
+  </li>
+  <li id="editorial">
+</li>
+<li id="spread1" class="spread1 page1"></li>
+<li class="spread1 page2"></li>
+<li class="spread1 page3"></li>
+<li class="spread1 page4"></li>
+<li class="spread1 page5"></li>
+<li class="spread1 page6"></li>
+<li id="spread2" class="spread2 page1"></li>
+<li class="spread2 page2"></li>
+<li class="spread2 page3"></li>
+<li id="spread3" class="spread3 page1"></li>
+<li class="spread3 page2"></li>
+<li class="spread3 page3"></li>
+<li class="backcover"></li>
+
+</ul>
+</div>
+{% endblock %}

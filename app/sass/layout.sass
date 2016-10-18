@@ -1,22 +1,126 @@
-.text
-    color: #333
+body
+    +pattern(lines-up-a, 10px, #eee, #fff)
+    heighT: 100vh
+    padding: 10px
+
+
++font-face(rakoon)
+
+.flexslider
+    position: relative
+    margin: 0 auto !important
+    // top: 50%
+    // transform: translateY(-50%)
+    vertical-align: bottom !important
+    .flex-viewport
+        +slideInLeft($duration: 1s)
+        border: solid 1px #ccc
+        .slides
+            li, li.flex-active-slide
+                background-color: #FFF
+    .flex-direction-nav
+
+    .flex-control-nav
+        +fadeInUp($delay: $delay + 400)
+        li
+            margin-left: -4px
+            a
+                +radius(normal, 0)
+                cursor: pointer
+                width: $gap
+                height: $gapxhalf
+                +opacity(100)
+                background-color: #ccc
+                &:hover, &.flex-active
+                    width: $gapx4
+                    +opacity(100)
+                    background-color: $c-mag1
+
+.btn
+    +transition
+
+body.mag1
+    ul.slides
+        +spread($mag: 'mag1', $spread: 'spread1')
+        +spread($mag: 'mag1', $spread: 'spread2')
+        +spread($mag: 'mag1', $spread: 'spread3')
+        li.cover
+            background-image: url("/images/mag1/cover.png")
+            background-size: 111% 111%
+            background-position: right bottom
+
+.cover
     header
-        width: 70%
-        padding: 35px 0
-        overflow: hidden
+        height: 160px
+        padding-top: 10px
+        background-color: $c-mag1
+        border-bottom: solid 5px white
+        color: white
+        h1, h2
+            color: white
 
-        h1, h2, h3
-            +rotate(-5)
-            background-color: $c-mag01
-            display: inline-block
-            color: white !important
-    div
-        width: 50%
-        float: left
+        h1
+            font-family: $font-brand
+            text-transform: lowercase
+            font-size: 150px
+            margin: 0
+            padding-left: 30px
+            float: left
+            line-height: 150px
+        h2
+            font-size: 27px
+            float: right
+            width: 200px
+            border-left: solid 5px white
+            line-height: 27px
+            height: 150px
+            margin: 0
+            margin-left: 20px
+            padding: 28px 35px
+            vertical-align: middle
+    .title
+        position: absolute
+        bottom: 0
+        display: table
+        width: 100%
+        height: 90px
+        .cell
+            display: table-cell
+            vertical-align: bottom
+            &:nth-of-type(1)
+            &:nth-of-type(2)
+                width: 100%
+        h1, h2
+            background-color: $c-mag1
+            color: white
+            margin: 0
+        h1
+            border: solid 5px white
+            border-left: none
+            border-bottom: none
+            padding: 15px 25px
+            font-size: 60px
+        h2
+            font-size: 35px
+            padding: 15px
+            border-top: solid 5px white
 
-p.eye
-    font-family: $font-title
-    font-size: 30px
-    line-heighT: 30px
-    padding: 20px
+    .instructions
+        color: white
+        +transition(margin-left)
+        border: solid 5px white
+        border-right: none
+        position: absolute
+        float: right
+        padding: 10px 15px
+        top: 50%
+        margin-left: 625px
+        margin-top: 25px
+        width: 100px
+        p
+            font-size: 15px
+            line-height: 17px
+        background-color: $c-mag1
 
+.flexslider:hover .cover .instructions
+    margin-left: 545px

@@ -1,0 +1,8 @@
+
+{% macro title(number="1", title="I like to draw shit") %}
+  <div class="title">
+  <div class="cell"><h1>#{{ number | safe }}</h1></div>
+  <div class="cell"><h2>{{ title | safe }}</h2></div>
+</div>
+
+{% endmacro %}

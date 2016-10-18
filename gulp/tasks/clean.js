@@ -3,5 +3,5 @@ del = require('del'),
 config = require('../config');
 
 gulp.task('clean', function(callback){
-  del(['./01/', './js/', './css/', './*.html', './app/sass/generated'], callback);
+  del(['./dist', './app/sass/generated', './*.html', './css', './images/', './js'], callback);
 });

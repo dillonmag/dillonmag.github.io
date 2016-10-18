@@ -1,0 +1,1 @@
+'./bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',

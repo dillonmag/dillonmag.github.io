@@ -4,10 +4,10 @@
 
 // ('ㅅ')づ font variables
 
-$font-title: DIN
-$font-text: Helvetica Neue, Helvetica, Arial, sans-serif
-$font-mono: "Courier New", Courier, monospace
 $font-brand: rakoon
+$font-title: LiberationSans-Regular
+$font-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+$font-mono: "Courier New", Courier, monospace
 
 // ('ㅅ')づ critical variables
 
@@ -17,7 +17,7 @@ $delay: 100ms
 
 // ('ㅅ')づ color variables
 
-$color-bg: #eee
+$color-bg: white
 $color-text: black
 $color-title: black
 $color-link: grey
@@ -59,9 +59,9 @@ $toggle_height: 20px
 $toggle_half: ($toggle_height / 2)
 $toggle_width: ($toggle_height * 2)
 $toggle_gap: 1px
-$toggle_bg: #fff
+$toggle_bg: $color-bg
 $toggle_off: #999
-$toggle_on: #333
+$toggle_on: #666
 
 // ('ㅅ')づ function variables
 
@@ -69,290 +69,13 @@ $prefixes: webkit moz ms o spec
 $legacy_support_for_ie: false !default
 $icons_on: true
 
-// ('ㅅ')づ vendors import
+// ('ㅅ')づ global imports, don't remove
 
-@import './bower_components/bootstrap-sass/assets/stylesheets/bootstrap'
-@import './bower_components/font-awesome/scss/font-awesome'
-@import './bower_components/animatewithsass/animate.scss'
-@import './bower_components/bootstrap-chosen/bootstrap-chosen.scss'
-@import 'vendors/codecode'
-@import 'vendors/flexslider'
-
-// ('ㅅ')づ generated imports
-
-// @import 'generated/svg'
+@import 'vendors/framework'
 
 // ('ㅅ')づ project imports
 
-$c-mag01: lighten(green, 10%)
+$c-mag1: #D13044
 
-@import 'layout'
 @import 'magazine'
-
-+font-face(rakoon)
-+font-face(DIN)
-
-
-
-body
-    +pattern(dots-b, 10px, #fff, #eee)
-    heighT: 100vh
-
-
-
-
-.flexslider
-    position: relative
-    margin: 0 auto !important
-    top: 50%
-    transform: translateY(-50%)
-    vertical-align: bottom !important
-    .flex-viewport
-        +slideInLeft($duration: 1s)
-        +shadow(normal, 0px 0px 5px rgba(0, 0, 0, 0.30))
-        &:hover
-            +shadow(normal, 0px 0px 5px rgba(0, 0, 0, 0.50))
-        .slides
-            li, li.flex-active-slide
-                background-color: #FFF
-    .flex-direction-nav
-        width: 300px
-    .flex-control-nav
-        margin-top: $gap !important
-        li
-            margin-left: -4px
-            a
-                +radius(normal, 0)
-                cursor: pointer
-                width: $gap
-                height: $gapxhalf
-                +opacity(100)
-                background-color: #ccc
-                &:hover, &.flex-active
-                    width: $gapx4
-                    +opacity(100)
-                    background-color: #B30043
-
-
-.flex-control-nav li
-    +fadeInUp($delay: $delay + 400)
-    &:nth-of-type(2)
-        +fadeInUp($delay: ($delay * 2 + 400))
-    &:nth-of-type(3)
-        +fadeInUp($delay: ($delay * 3 + 400))
-    &:nth-of-type(4)
-        +fadeInUp($delay: ($delay * 4 + 400))
-    &:nth-of-type(5)
-        +fadeInUp($delay: ($delay * 5 + 400))
-    &:nth-of-type(6)
-        +fadeInUp($delay: ($delay * 6 + 400))
-    &:nth-of-type(7)
-        +fadeInUp($delay: ($delay * 7 + 400))
-    &:nth-of-type(8)
-        +fadeInUp($delay: ($delay * 8 + 400))
-    &:nth-of-type(9)
-        +fadeInUp($delay: ($delay * 9 + 400))
-    &:nth-of-type(10)
-        +fadeInUp($delay: ($delay * 10 + 400))
-    &:nth-of-type(11)
-        +fadeInUp($delay: ($delay * 11 + 400))
-    &:nth-of-type(12)
-        +fadeInUp($delay: ($delay * 12 + 400))
-    &:nth-of-type(13)
-        +fadeInUp($delay: ($delay * 13 + 400))
-    &:nth-of-type(14)
-        +fadeInUp($delay: ($delay * 14 + 400))
-    &:nth-of-type(15)
-        +fadeInUp($delay: ($delay * 15 + 400))
-    &:nth-of-type(16)
-        +fadeInUp($delay: ($delay * 16 + 400))
-    &:nth-of-type(17)
-        +fadeInUp($delay: ($delay * 17 + 400))
-    &:nth-of-type(18)
-        +fadeInUp($delay: ($delay * 18 + 400))
-    &:nth-of-type(19)
-        +fadeInUp($delay: ($delay * 19 + 400))
-    &:nth-of-type(20)
-        +fadeInUp($delay: ($delay * 20 + 400))
-    &:nth-of-type(21)
-        +fadeInUp($delay: ($delay * 21 + 400))
-    &:nth-of-type(22)
-        +fadeInUp($delay: ($delay * 22 + 400))
-    &:nth-of-type(23)
-        +fadeInUp($delay: ($delay * 23 + 400))
-    &:nth-of-type(24)
-        +fadeInUp($delay: ($delay * 24 + 400))
-    &:nth-of-type(25)
-        +fadeInUp($delay: ($delay * 25 + 400))
-    &:nth-of-type(26)
-        +fadeInUp($delay: ($delay * 26 + 400))
-
-.btn
-    +transition
-
-.newsletter
-    background: none
-    background-color: #fff
-    padding: 30px
-    .member
-        display: none
-        border-top: solid 1px #ccc
-        padding: $gap 0
-        margin-top: $gap
-        +transition
-        &.open
-            display: block
-            +fadeIn
-.subscription
-    background-color: #FFF
-    iframe
-        height: 465px
-    .backcover &
-        margin: 0 30px
-
-.cover
-    h1, h2, h3
-        background-color: #FFF
-        displaY: inline-block
-        position: absolute
-        left: 0
-    h2
-        bottom: 40px
-    .first &
-        background-image: url("../images/01/cover.jpg")
-        background-size: cover
-h1
-    font-family: $font-brand
-    padding: 0 30px
-h2
-    &.pending
-        text-align: center
-        margin-top: 50%
-
-.backcover
-    .first &
-        background-image: url("../images/01/cover.jpg")
-        background-size: cover
-    h1
-        color: white !important
-        margin: 0
-
-.border
-    background-color: #FFF
-    &:nth-of-type(2n-1)
-        height: 30px
-    position: absolute
-    &:nth-of-type(2n)
-        width: 30px
-        background-color: #FFF
-        position: absolute
-        display: block
-        content: ""
-    &:nth-of-type(3)
-        bottom: 0
-
-html.touch .show-touch,
-html.no-touch .hide-touch
-        display: block
-html.touch .hide-touch, html.no-touch .show-touch
-        display: none
-
-.instructions
-    background-color: white
-    +bounceIn($delay: ($delay * 20))
-    position: absolute
-    top: 50%
-    margin-top: -40px
-    font-family: $font-title
-    text-transform: uppercase
-    font-size: 18px
-    line-height: 100%
-    display: table
-    padding: 20px
-    width: 120px
-    height: 120px
-    text-align: center
-    p
-        margin: 5px 0 0 0
-    +radius(normal, 50%)
-
-
-.flex-next
-    +pulse
-.alert
-    +fadeInDown
-
-
-.share
-    padding: 100px 20px
-    a
-        +size(square, 30px)
-        display: inline-block
-        background-color: white
-        +radius(normal, 50%)
-        text-align: center
-        +transition
-        color: #666
-        font-size: 20px
-        margin-left: -5px
-        padding-top: 1px
-        .flex-active-slide &
-            +fadeInLeft
-            &:nth-of-type(2)
-                +fadeInLeft($delay: 300ms)
-            &:nth-of-type(3)
-                +fadeInLeft($delay: 600ms)
-        i.fa-envelope
-            font-size: 15px
-            @include translate(0, -3)
-        &:hover
-            background-color: transparent
-            color: #666
-
-=spread($mag: '01', $spread: 'spread1')
-    .#{$spread}
-        background-size: cover
-        &.page1
-            background-image: url("../images/#{$mag}/#{$spread}/01.png")
-        &.page2
-            background-image: url("../images/#{$mag}/#{$spread}/02.png")
-        &.page3
-            background-image: url("../images/#{$mag}/#{$spread}/03.png")
-        &.page4
-            background-image: url("../images/#{$mag}/#{$spread}/04.png")
-        &.page5
-            background-image: url("../images/#{$mag}/#{$spread}/05.png")
-        &.page6
-            background-image: url("../images/#{$mag}/#{$spread}/06.png")
-        &.page7
-            background-image: url("../images/#{$mag}/#{$spread}/07.png")
-        &.page8
-            background-image: url("../images/#{$mag}/#{$spread}/08.png")
-        &.page9
-            background-image: url("../images/#{$mag}/#{$spread}/09.png")
-        &.page10
-            background-image: url("../images/#{$mag}/#{$spread}/10.png")
-        &.page11
-            background-image: url("../images/#{$mag}/#{$spread}/11.png")
-        &.page12
-            background-image: url("../images/#{$mag}/#{$spread}/12.png")
-
-.mag01
-    +spread($mag: '01', $spread: 'spread1')
-    +spread($mag: '01', $spread: 'spread2')
-
-.btn.btn-icon
-    padding: 5px 4px 4px 8px
-    height: 30px
-    width: 30px
-    margin: 0
-#toggle
-    position: fixed
-    top: 5px
-    righT: 5px
-    +opacity(40)
-    &:hover
-        +opacity(100)
-
-
-
+@import 'layout'
