@@ -1,0 +1,11 @@
+{% macro article(
+    mag="1",
+    article="spread1",
+    title="I like to draw shit",
+    author="Nicholas Frota"
+) %}
+    <header class="article">
+       <h1>{{ title | safe }}</h1>
+       <h2>{{ author | safe }}</h2>
+   </header>
+{% endmacro %}
