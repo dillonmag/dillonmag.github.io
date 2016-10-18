@@ -33710,7 +33710,7 @@ body {
     body .flexslider .flex-viewport {
       width: 639.999px;
       height: 900px; }
-      body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
+      body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
         height: 900px;
         width: 639.999px; }
   body .subscription {
@@ -33762,7 +33762,7 @@ body {
         body .flexslider .flex-viewport {
           width: 426.666px;
           height: 600px; }
-          body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
+          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
             height: 600px;
             width: 426.666px; }
       body .subscription {
@@ -33826,7 +33826,7 @@ body {
         body .flexslider .flex-viewport {
           width: 675.5545px;
           height: 950px; }
-          body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
+          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
             height: 950px;
             width: 675.5545px; }
       body .subscription {
@@ -33877,7 +33877,7 @@ body {
         body .flexslider .flex-viewport {
           width: 302.22175px;
           height: 425px; }
-          body .flexslider .flex-viewport .slides li, body .flexslider .flex-viewport .slides li.flex-active-slide {
+          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
             height: 425px;
             width: 302.22175px; }
       body .subscription {
@@ -34155,3 +34155,33 @@ body.mag1 ul.slides li.cover {
 
 .flexslider:hover .cover .instructions {
   margin-left: 545px; }
+
+li#editorial {
+  background-color: red; }
+
+header.article {
+  padding-top: 20px; }
+  header.article h1, header.article h2 {
+    background-color: #D13044;
+    border: solid 5px white;
+    border-left: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0; }
+  header.article h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 350px; }
+  header.article h2 {
+    border-top: none;
+    font-size: 30px;
+    line-height: 30px; }
+    header.article h2:before {
+      content: "";
+      height: 20px;
+      width: 20px;
+      margin: -25px 0 0 -20px;
+      display: block;
+      position: absolute;
+      background-color: #D13044; }

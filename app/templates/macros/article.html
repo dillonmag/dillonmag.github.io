@@ -6,6 +6,26 @@
 ) %}
     <header class="article">
        <h1>{{ title | safe }}</h1>
-       <h2>{{ author | safe }}</h2>
+       <h2>by {{ author | safe }}</h2>
+       <h3>{{project.url}}</h3>
+       <ul class="social">
+        <li>
+            <a href="http://twitter.com/home?status={{ title | safe }} http://nyadi.org/{{ mag | safe }}/#{{ article | safe }}"
+         target="_blank">
+         <i class="fa fa-twitter"></i>
+        </a>
+        </li>
+         <li>
+         <a href="https://www.facebook.com/sharer/sharer.php?u=http://nyadi.org/{{ mag | safe }}/#{{ article | safe }}"
+          target="_blank">
+          <i class="fa fa-facebook"></i>
+         </a>
+        </li>
+              <li>
+              <a href="mailto:?subject={{ title | safe }}&body=by {{ author | safe }}%0D%0A%0D%0Ahttp://nyadi.org/{{ mag | safe }}/#{{ article | safe }}">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+        </li>
+       </ul>
    </header>
 {% endmacro %}

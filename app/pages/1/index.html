@@ -14,17 +14,14 @@
 
   </li>
   <li id="editorial">
-  {% macro article(
+  {% include "macros/article.html" %}
+   {% import "macros/article.html" as editorial %}
+  {{ editorial.article(
     mag="1",
     article="spread1",
-    title="Editorial",
+    title="on being seen seeing others",
     author="Vanessa Dudley"
-) %}
-    <header class="article">
-       <h1>{{ title | safe }}</h1>
-       <h2>{{ author | safe }}</h2>
-   </header>
-{% endmacro %}
+) }}
 </li>
 <li id="spread1" class="spread1 page1"></li>
 <li class="spread1 page2"></li>
