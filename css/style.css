@@ -33689,16 +33689,16 @@ html[xmlns] .flexslider .slides {
     right: 10px; } }
 
 body .flexslider {
-  width: 63.9999vh; }
+  width: 60.44435vh; }
   body .flexslider .flex-viewport {
-    width: 63.9999vh;
-    height: 90vh; }
+    width: 60.44435vh;
+    height: 85vh; }
     body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-      height: 90vh;
-      width: 63.9999vh; }
+      height: 85vh;
+      width: 60.44435vh; }
 
 body .cover .title {
-  width: 63.9999vh; }
+  width: 60.44435vh; }
 
 body {
   position: relative;
