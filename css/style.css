@@ -33913,9 +33913,9 @@ body {
 body {
   position: relative;
   z-index: 1;
-  background-size: 10px;
+  background-size: 15px;
   background-color: none;
-  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%2712%2C12%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27white%27%20points%3D%270.707%2C12%200%2C12%200%2C11.293%2011.293%2C0%2012%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#eeeeee%27%20points%3D%270%2C11.293%2011.293%2C0%200.707%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#eeeeee%27%20points%3D%270.707%2C12%2012%2C0.707%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C12%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270.707%2C12%200%2C12%200%2C11.293%2011.293%2C0%2012%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%270%2C11.293%2011.293%2C0%200.707%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%270.707%2C12%2012%2C0.707%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3C/svg%3E");
   heighT: 100vh;
   padding: 10px; }
 
@@ -33952,9 +33952,9 @@ body {
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    box-shadow: 0 0 1px black; }
+    box-shadow: 0 0 1px white; }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
-      background-color: #FFF; }
+      background-color: #eee; }
   .flexslider .flex-prev, .flexslider .flex-next {
     background-color: #D13044;
     border: solid 3px white; }
@@ -33988,7 +33988,8 @@ body {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    padding-top: 10px !important; }
     .flexslider .flex-control-nav li {
       margin-left: -4px; }
       .flexslider .flex-control-nav li a {
@@ -34001,7 +34002,7 @@ body {
         filter: "alpha(opacity=100)";
         -khtml-opacity: 1;
         -moz-opacity: 1;
-        background-color: #ccc; }
+        background-color: #999; }
         .flexslider .flex-control-nav li a:hover, .flexslider .flex-control-nav li a.flex-active {
           width: 80px;
           opacity: 1;
@@ -34188,9 +34189,6 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
     font-size: 15px;
     line-height: 17px; }
 
-li#editorial {
-  background-color: #eee; }
-
 header.article {
   padding-top: 20px; }
   .flex-active-slide header.article {
@@ -34313,39 +34311,9 @@ header.article {
       border-top: none; }
   .eye.right {
     float: right; }
-    .flex-active-slide .eye.right {
-      -webkit-animation-name: fadeInRight;
-      animation-name: fadeInRight;
-      -webkit-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-delay: 600ms;
-      animation-delay: 600ms;
-      -webkit-animation-timing-function: ease;
-      animation-timing-function: ease;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
     .eye.right p {
       border-right: none; }
   .eye.left {
     float: left; }
-    .flex-active-slide .eye.left {
-      -webkit-animation-name: fadeInLeft;
-      animation-name: fadeInLeft;
-      -webkit-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-delay: 600ms;
-      animation-delay: 600ms;
-      -webkit-animation-timing-function: ease;
-      animation-timing-function: ease;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
     .eye.left p {
       border-left: none; }

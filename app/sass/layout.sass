@@ -1,5 +1,5 @@
 body
-    +pattern(lines-up-a, 10px, #eee, #fff)
+    +pattern(lines-up-a, 15px, #666, #333)
     heighT: 100vh
     padding: 10px
 
@@ -15,10 +15,10 @@ body
 
     .flex-viewport
         +slideInLeft($duration: 1s)
-        +shadow(normal, 0 0 1px black)
+        +shadow(normal, 0 0 1px white)
         .slides
             li, li.flex-active-slide
-                background-color: #FFF
+                background-color: #eee
     .flex-prev, .flex-next
         background-color: $c-mag1
         border: solid 3px white
@@ -40,6 +40,7 @@ body
         right: 0 !important
     .flex-control-nav
         +fadeInLeft($delay: $delay)
+        padding-top: 10px !important
         li
             margin-left: -4px
             a
@@ -48,7 +49,7 @@ body
                 width: $gap
                 height: $gapxhalf
                 +opacity(100)
-                background-color: #ccc
+                background-color: #999
                 &:hover, &.flex-active
                     width: $gapx4
                     +opacity(100)
@@ -150,9 +151,6 @@ body.mag1
 
 
 
-li#editorial
-    background-color: #eee
-
 header.article
     padding-top: 20px
     .flex-active-slide &
@@ -249,13 +247,9 @@ header.article
             border-top: none
     &.right
         float: right
-        .flex-active-slide &
-            +fadeInRight($delay: $delay)
         p
             border-right: none
     &.left
         float: left
-        .flex-active-slide &
-            +fadeInLeft($delay: $delay)
         p
             border-left: none
