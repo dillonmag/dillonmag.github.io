@@ -6,87 +6,123 @@
   <ul class="slides">
    <li class="cover">
     {% include "partials/brand.html" %}
-        {% include "macros/title.html" %}
- {% import "macros/title.html" as title %}
- {{ title.title(number="1", title="I like to draw shit") }}
+    {% include "macros/title.html" %}
+    {% import "macros/title.html" as title %}
+    {{ title.title(number="1", title="I like to draw shit") }}
     {% include "partials/instructions.html" %}
-
-
-  </li>
-  <li id="editorial">
+</li>
+<li id="editorial">
   {% include "macros/article.html" %}
-   {% import "macros/article.html" as editorial %}
+  {% import "macros/article.html" as editorial %}
   {{ editorial.article(
-    mag="1",
-    article="editorial",
-    title="On Being Seen Seeing Others",
-    author="Vanessa Dudley"
-) }}
+  mag="1",
+  article="editorial",
+  title="On Being Seen Seeing Others",
+  author="Vanessa Dudley"
+  ) }}
 </li>
 <li id="spread1" class="spread1 page1">
-      {% include "macros/article.html" %}
-   {% import "macros/article.html" as spread1 %}
+  {% include "macros/article.html" %}
+  {% import "macros/article.html" as spread1 %}
   {{ spread1.article(
-    mag="1",
-    article="spread1",
-    title="voluptates possimus repellendus, aperiam.",
-    author="Nicholas Frota"
-) }}
+  mag="1",
+  article="spread1",
+  title="voluptates possimus repellendus, aperiam.",
+  author="Nicholas Frota"
+  ) }}
 </li>
 <li class="spread1 page2"></li>
 <li class="spread1 page3">
-       {% include "macros/eye.html" %}
+   {% include "macros/eye.html" %}
    {% import "macros/eye.html" as eye1 %}
-  {{ eye1.eye(
+   {{ eye1.eye(
    position="right",
-    content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore minima quo labore modi aut! Iste distinctio odit maiores odio eligendi?</p><p> Fugit quae obcaecati impedit eaque pariatur, at."
-) }}
+   content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore minima quo labore modi aut! Iste distinctio odit maiores odio eligendi?</p><p> Fugit quae obcaecati impedit eaque pariatur, at."
+   ) }}
 </li>
 <li class="spread1 page4">
-           {% include "macros/eye.html" %}
+   {% include "macros/eye.html" %}
    {% import "macros/eye.html" as eye2 %}
-  {{ eye2.eye(
+   {{ eye2.eye(
    position="right",
-    content="Eveniet reiciendis optio consequatur qui in ipsam possimus modi adipisci quidem laboriosam!",
-    margin="43px"
-) }}
-           {% include "macros/eye.html" %}
+   content="Eveniet reiciendis optio consequatur qui in ipsam possimus modi adipisci quidem laboriosam!",
+   margin="43px"
+   ) }}
+   {% include "macros/eye.html" %}
    {% import "macros/eye.html" as eye3 %}
-  {{ eye3.eye(
-    content="Iure eaque quaerat, dicta quis quidem minima laborum ratione omnis, ipsum! Delectus consequuntur dolorem saepe molestiae, explicabo, quibusdam animi voluptatem? Sint, temporibus."
-) }}
+   {{ eye3.eye(
+   content="Iure eaque quaerat, dicta quis quidem minima laborum ratione omnis, ipsum! Delectus consequuntur dolorem saepe molestiae, explicabo, quibusdam animi voluptatem? Sint, temporibus."
+   ) }}
 </li>
 <li class="spread1 page5">
     {% include "macros/eye.html" %}
-   {% import "macros/eye.html" as eye4 %}
-  {{ eye4.eye(
+    {% import "macros/eye.html" as eye4 %}
+    {{ eye4.eye(
     content="Cumque, quae quasi facere aspernatur, velit veniam optio quod quas ullam distinctio maiores cupiditate aliquam voluptate."
-) }}
+    ) }}
 </li>
 <li class="spread1 page6">
-           {% include "macros/eye.html" %}
+   {% include "macros/eye.html" %}
    {% import "macros/eye.html" as eye5 %}
-  {{ eye5.eye(
+   {{ eye5.eye(
    position="right",
-    content="Quis cum praesentium nisi maiores labore voluptatem reiciendis dicta quasi quaerat, deleniti accusamus ex itaque laudantium illo!"
-) }}
-          {% include "macros/end.html" %}
+   content="Quis cum praesentium nisi maiores labore voluptatem reiciendis dicta quasi quaerat, deleniti accusamus ex itaque laudantium illo!"
+   ) }}
+   {% include "macros/end.html" %}
    {% import "macros/end.html" as end1 %}
-  {{ end1.end(
-    mag="1",
-    article="spread1",
-    title="voluptates possimus repellendus, aperiam.",
-    author="Nicholas Frota"
-) }}
+   {{ end1.end(
+   mag="1",
+   article="spread1",
+   title="voluptates possimus repellendus, aperiam.",
+   author="Nicholas Frota"
+   ) }}
 </li>
-<li id="spread2" class="spread2 page1"></li>
+<li id="spread2" class="spread2 page1">
+  {% include "macros/article.html" %}
+  {% import "macros/article.html" as spread2 %}
+  {{ spread2.article(
+  mag="1",
+  article="spread2",
+  title="Quod sit nihil enim ex quaerat voluptatibus",
+  author="Vanessa Dudley"
+  ) }}
+</li>
 <li class="spread2 page2"></li>
-<li class="spread2 page3"></li>
-<li id="spread3" class="spread3 page1"></li>
+<li class="spread2 page3">
+       {% include "macros/end.html" %}
+   {% import "macros/end.html" as end2 %}
+   {{ end2.end(
+  mag="1",
+  article="spread2",
+  title="Quod sit nihil enim ex quaerat voluptatibus",
+  author="Vanessa Dudley"
+   ) }}
+</li>
+<li id="spread3" class="spread3 page1">
+    {% include "macros/article.html" %}
+    {% import "macros/article.html" as spread3 %}
+    {{ spread3.article(
+    mag="1",
+    article="spread3",
+    title="Perspiciatis explicabo",
+    author="Rosemary Susat"
+    ) }}
+</li>
 <li class="spread3 page2"></li>
 <li class="spread3 page3"></li>
+<li class="spread3 page4"></li>
+<li class="spread3 page5"></li>
+<li class="spread3 page6">
+           {% include "macros/end.html" %}
+   {% import "macros/end.html" as end3 %}
+   {{ end3.end(
+    mag="1",
+    article="spread3",
+    title="Perspiciatis explicabo",
+    author="Rosemary Susat"
+   ) }}
+</li>
 <li class="backcover"></li>
-
 </ul>
 </div>
 {% endblock %}

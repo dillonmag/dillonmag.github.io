@@ -33936,9 +33936,6 @@ body {
 .flexslider {
   position: relative;
   margin: 0 auto !important;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   vertical-align: bottom !important; }
   .flexslider .flex-viewport {
     -webkit-animation-name: slideInLeft;
@@ -33958,15 +33955,34 @@ body {
     box-shadow: 0 0 1px black; }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #FFF; }
+  .flexslider .flex-prev, .flexslider .flex-next {
+    background-color: #D13044;
+    border: solid 3px white; }
+    .touch .flexslider .flex-prev, .touch .flexslider .flex-next {
+      display: none; }
+    .flexslider .flex-prev:before, .flexslider .flex-next:before {
+      color: white;
+      font-size: 40px;
+      padding-top: 5px; }
+    .flexslider .flex-prev:hover, .flexslider .flex-next:hover {
+      text-decoration: none !important; }
+  .flexslider .flex-prev {
+    border-left: none;
+    padding-left: 10px;
+    left: 0 !important; }
+  .flexslider .flex-next {
+    border-right: none;
+    padding-right: 10px;
+    right: 0 !important; }
   .flexslider .flex-control-nav {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-delay: 1000ms;
-    animation-delay: 1000ms;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
     -webkit-animation-fill-mode: both;
@@ -34084,6 +34100,9 @@ body.mag1 ul.slides li.cover {
   background-size: 111% 111%;
   background-position: right bottom; }
 
+body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nth-of-type(3), body.mag1 .flex-control-nav li:nth-of-type(9), body.mag1 .flex-control-nav li:nth-of-type(12), body.mag1 .flex-control-nav li:last-of-type {
+  margin-left: 4px; }
+
 .cover header {
   height: 160px;
   padding-top: 10px;
@@ -34138,26 +34157,36 @@ body.mag1 ul.slides li.cover {
     padding: 15px;
     border-top: solid 5px white; }
 
-.cover .instructions {
+.instructions {
   color: white;
-  -webkit-transition: margin-left 300ms ease-out !important;
-  transition: margin-left 300ms ease-out !important;
-  border: solid 5px white;
+  border: solid 3px white;
   border-right: none;
   position: absolute;
   float: right;
   padding: 10px 15px;
   top: 50%;
-  margin-left: 625px;
-  margin-top: 25px;
+  margin-left: 545px;
+  margin-top: 30px;
   width: 100px;
   background-color: #D13044; }
-  .cover .instructions p {
+  .flex-active-slide .instructions {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .instructions p {
     font-size: 15px;
     line-height: 17px; }
-
-.flexslider:hover .cover .instructions {
-  margin-left: 545px; }
 
 li#editorial {
   background-color: #eee; }

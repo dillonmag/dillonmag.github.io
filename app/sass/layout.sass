@@ -9,8 +9,8 @@ body
 .flexslider
     position: relative
     margin: 0 auto !important
-    top: 50%
-    transform: translateY(-50%)
+    // top: 50%
+    // transform: translateY(-50%)
     vertical-align: bottom !important
 
     .flex-viewport
@@ -19,10 +19,27 @@ body
         .slides
             li, li.flex-active-slide
                 background-color: #FFF
-    .flex-direction-nav
-
+    .flex-prev, .flex-next
+        background-color: $c-mag1
+        border: solid 3px white
+        .touch &
+            display: none
+        &:before
+            color: white
+            font-size: 40px
+            padding-top: 5px
+        &:hover
+            text-decoration: none !important
+    .flex-prev
+        border-left: none
+        padding-left: 10px
+        left: 0 !important
+    .flex-next
+        border-right: none
+        padding-right: 10px
+        right: 0 !important
     .flex-control-nav
-        +fadeInUp($delay: $delay + 400)
+        +fadeInLeft($delay: $delay)
         li
             margin-left: -4px
             a
@@ -49,6 +66,13 @@ body.mag1
             background-image: url("/images/mag1/cover.png")
             background-size: 111% 111%
             background-position: right bottom
+    .flex-control-nav li
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(9),
+        &:nth-of-type(12),
+        &:last-of-type
+            margin-left: 4px
 
 .cover
     header
@@ -106,25 +130,25 @@ body.mag1
             padding: 15px
             border-top: solid 5px white
 
-    .instructions
-        color: white
-        +transition(margin-left)
-        border: solid 5px white
-        border-right: none
-        position: absolute
-        float: right
-        padding: 10px 15px
-        top: 50%
-        margin-left: 625px
-        margin-top: 25px
-        width: 100px
-        p
-            font-size: 15px
-            line-height: 17px
-        background-color: $c-mag1
-
-.flexslider:hover .cover .instructions
+.instructions
+    color: white
+    border: solid 3px white
+    border-right: none
+    position: absolute
+    float: right
+    padding: 10px 15px
+    top: 50%
     margin-left: 545px
+    margin-top: 30px
+    width: 100px
+    background-color: $c-mag1
+    .flex-active-slide &
+        +fadeInRight($delay: $delay)
+    p
+        font-size: 15px
+        line-height: 17px
+
+
 
 li#editorial
     background-color: #eee
