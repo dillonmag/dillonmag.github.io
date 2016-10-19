@@ -33808,7 +33808,7 @@ header.article h1, header.article h2 {
   .flexslider .flex-prev, .flexslider .flex-next {
     background-color: #D13044;
     height: 6vh;
-    width: 6vh;
+    width: 5vh;
     padding-top: 2vh;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -33822,15 +33822,22 @@ header.article h1, header.article h2 {
       color: white;
       font-size: 6vh; }
     .flexslider .flex-prev:hover, .flexslider .flex-next:hover {
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      width: 7vh; }
   .flexslider .flex-prev {
     border-left: none;
-    padding-left: 1.5vh;
-    left: 0 !important; }
+    padding-left: 1vh;
+    left: 0 !important;
+    margin-left: -5vh; }
+    .flexslider .flex-prev:hover {
+      padding-left: 2vh; }
   .flexslider .flex-next {
     border-right: none;
-    padding-right: 1.5vh;
-    right: 0 !important; }
+    padding-right: 1vh;
+    right: 0 !important;
+    margin-right: -5vh; }
+    .flexslider .flex-next:hover {
+      padding-right: 2vh; }
   .flexslider .flex-control-nav {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
@@ -33853,20 +33860,33 @@ header.article h1, header.article h2 {
         border-radius: 0;
         background-clip: padding-box;
         cursor: pointer;
-        width: 10px;
-        height: 10px;
+        width: 1.5vh;
+        height: 1.5vh;
         opacity: 1;
         filter: "alpha(opacity=100)";
         -khtml-opacity: 1;
         -moz-opacity: 1;
         background-color: #999; }
         .flexslider .flex-control-nav li a:hover, .flexslider .flex-control-nav li a.flex-active {
-          width: 80px;
+          width: 6vh;
           opacity: 1;
           filter: "alpha(opacity=100)";
           -khtml-opacity: 1;
           -moz-opacity: 1;
           background-color: #D13044; }
+  .flexslider:hover .flex-direction-nav .flex-prev, .flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -khtml-opacity: 1;
+    -moz-opacity: 1; }
+  .flexslider:hover .flex-direction-nav .flex-prev {
+    margin-left: 0;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -khtml-opacity: 1;
+    -moz-opacity: 1; }
+  .flexslider:hover .flex-direction-nav .flex-next {
+    margin-right: 0; }
 
 .btn {
   -webkit-transition: all 300ms ease-out !important;
@@ -33959,7 +33979,7 @@ body.mag1 ul.slides li.cover {
   background-position: right bottom; }
 
 body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nth-of-type(3), body.mag1 .flex-control-nav li:nth-of-type(9), body.mag1 .flex-control-nav li:nth-of-type(12), body.mag1 .flex-control-nav li:last-of-type {
-  margin-left: 4px; }
+  margin-left: 1vh; }
 
 .cover header {
   zoom: 1;
@@ -34011,32 +34031,22 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
 .instructions {
   color: white;
   border-right: none;
-  position: absolute;
   float: right;
-  padding: 10px 15px;
-  top: 50%;
-  margin-left: 545px;
-  margin-top: 30px;
+  padding: 1.5vh;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
+  display: none;
+  margin-top: 32vh;
   width: 100px;
+  margin-right: -100px;
   background-color: #D13044; }
   .flex-active-slide .instructions {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
+    display: block; }
+  .flexslider:hover .instructions {
+    margin-right: 0px; }
   .instructions p {
-    font-size: 15px;
-    line-height: 17px; }
+    font-size: 2.5vh;
+    line-height: 110%; }
 
 header.article {
   padding-top: 2vh; }

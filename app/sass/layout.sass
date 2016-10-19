@@ -26,7 +26,7 @@ body
     .flex-prev, .flex-next
         background-color: $c-mag1
         height: 6vh
-        width: 6vh
+        width: 5vh
         padding-top: 2vh
         +border-box
         +hide-text
@@ -37,14 +37,21 @@ body
             font-size: 6vh
         &:hover
             text-decoration: none !important
+            width: 7vh
     .flex-prev
         border-left: none
-        padding-left: 1.5vh
+        padding-left: 1vh
         left: 0 !important
+        margin-left: -5vh
+        &:hover
+             padding-left: 2vh
     .flex-next
         border-right: none
-        padding-right: 1.5vh
+        padding-right: 1vh
         right: 0 !important
+        margin-right: -5vh
+        &:hover
+             padding-right: 2vh
     .flex-control-nav
         +fadeInLeft($delay: $delay)
         padding-top: 1vh !important
@@ -53,14 +60,23 @@ body
             a
                 +radius(normal, 0)
                 cursor: pointer
-                width: $gapxhalf
-                height: $gapxhalf
+                width: 1.5vh
+                height: 1.5vh
                 +opacity(100)
                 background-color: #999
                 &:hover, &.flex-active
-                    width: $gapx4
+                    width: 6vh
                     +opacity(100)
                     background-color: $c-mag1
+    &:hover .flex-direction-nav
+        .flex-prev, .flex-next
+            +opacity(100)
+        .flex-prev
+            margin-left: 0
+            +opacity(100)
+        .flex-next
+            margin-right: 0
+
 
 .btn
     +transition
@@ -80,7 +96,7 @@ body.mag1
         &:nth-of-type(9),
         &:nth-of-type(12),
         &:last-of-type
-            margin-left: 4px
+            margin-left: 1vh
 
 .cover
     header
@@ -131,19 +147,21 @@ body.mag1
 .instructions
     color: white
     border-right: none
-    position: absolute
     float: right
-    padding: 10px 15px
-    top: 50%
-    margin-left: 545px
-    margin-top: 30px
+    padding: ($nudge / 2)
+    +transition
+    display: none
+    margin-top: 32vh
     width: 100px
+    margin-right: -100px
     background-color: $c-mag1
     .flex-active-slide &
-        +fadeInRight($delay: $delay)
+        display: block
+    .flexslider:hover &
+        margin-right: 0px
     p
-        font-size: 15px
-        line-height: 17px
+        font-size: 2.5vh
+        line-height: 110%
 
 
 
