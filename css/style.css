@@ -33936,6 +33936,9 @@ body {
 .flexslider {
   position: relative;
   margin: 0 auto !important;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   vertical-align: bottom !important; }
   .flexslider .flex-viewport {
     -webkit-animation-name: slideInLeft;
@@ -33952,9 +33955,7 @@ body {
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
-    .flexslider .flex-viewport:hover {
-      box-shadow: 0 0 1px black; }
+    box-shadow: 0 0 1px black; }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #FFF; }
   .flexslider .flex-control-nav {
@@ -34115,7 +34116,7 @@ body.mag1 ul.slides li.cover {
   position: absolute;
   bottom: 0;
   display: table;
-  width: 100%;
+  width: 640px;
   height: 90px; }
   .cover .title .cell {
     display: table-cell;

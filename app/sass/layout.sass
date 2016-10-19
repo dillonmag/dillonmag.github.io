@@ -9,15 +9,13 @@ body
 .flexslider
     position: relative
     margin: 0 auto !important
-    // top: 50%
-    // transform: translateY(-50%)
+    top: 50%
+    transform: translateY(-50%)
     vertical-align: bottom !important
 
     .flex-viewport
         +slideInLeft($duration: 1s)
-        +shadow(normal, 0 0 1px rgba(0,0,0, .5))
-        &:hover
-            +shadow(normal, 0 0 1px rgba(0,0,0, 1))
+        +shadow(normal, 0 0 1px black)
         .slides
             li, li.flex-active-slide
                 background-color: #FFF
@@ -85,7 +83,7 @@ body.mag1
         position: absolute
         bottom: 0
         display: table
-        width: 100%
+        width: 640px
         height: 90px
         .cell
             display: table-cell
