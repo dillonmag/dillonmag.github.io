@@ -33809,7 +33809,7 @@ header.article h1, header.article h2 {
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #eee; }
   .flexslider .flex-prev, .flexslider .flex-next {
-    background-color: #D13044;
+    background-color: #000099;
     height: 6vh;
     width: 5vh;
     padding-top: 2vh;
@@ -33876,7 +33876,7 @@ header.article h1, header.article h2 {
           filter: "alpha(opacity=100)";
           -khtml-opacity: 1;
           -moz-opacity: 1;
-          background-color: #D13044; }
+          background-color: #000099; }
   .flexslider:hover .flex-direction-nav .flex-prev, .flexslider:hover .flex-direction-nav .flex-next {
     opacity: 1;
     filter: "alpha(opacity=100)";
@@ -33986,7 +33986,7 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
 
 .cover header {
   zoom: 1;
-  background-color: #D13044;
+  background-color: #000099;
   padding-top: 10px;
   color: white; }
   .cover header:before, .cover header:after {
@@ -34019,7 +34019,7 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
     .cover .title .cell:nth-of-type(2) {
       width: 100%; }
   .cover .title h1, .cover .title h2 {
-    background-color: #D13044;
+    background-color: #000099;
     color: white;
     margin: 0; }
   .cover .title h1 {
@@ -34042,7 +34042,7 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
   margin-top: 32vh;
   width: 100px;
   margin-right: -100px;
-  background-color: #D13044; }
+  background-color: #000099; }
   .flex-active-slide .instructions {
     display: block; }
   .flexslider:hover .instructions {
@@ -34069,7 +34069,7 @@ header.article {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   header.article h1, header.article h2 {
-    background-color: #D13044;
+    background-color: #000099;
     border-left: none;
     color: white;
     padding: 1.5vh 3vh;
@@ -34090,7 +34090,7 @@ header.article {
       margin: -3vh 0 0 -3vh;
       display: block;
       position: absolute;
-      background-color: #D13044; }
+      background-color: #000099; }
   header.article .social a:first-of-type {
     width: 8vh;
     padding-left: 3vh; }
@@ -34103,12 +34103,12 @@ header.article {
       margin: -3vh 0 0 -3vh;
       display: block;
       position: absolute;
-      background-color: #D13044; }
+      background-color: #000099; }
 
 .social {
   font-size: 2.5vh; }
   .social a {
-    background-color: #D13044;
+    background-color: #000099;
     width: 5vh;
     height: 5vh;
     -webkit-transition: all 300ms ease-out !important;
@@ -34159,7 +34159,7 @@ header.article {
 .eye {
   width: 25vh; }
   .eye p {
-    background-color: #D13044;
+    background-color: #000099;
     font-size: 2.5vh;
     line-height: 120%;
     color: white;
