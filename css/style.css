@@ -33951,8 +33951,7 @@ body {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: solid 1px #ccc; }
+    backface-visibility: hidden; }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #FFF; }
   .flexslider .flex-control-nav {
@@ -34161,6 +34160,21 @@ li#editorial {
 
 header.article {
   padding-top: 20px; }
+  .flex-active-slide header.article {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
   header.article h1, header.article h2 {
     background-color: #D13044;
     border: solid 5px white;
@@ -34173,64 +34187,19 @@ header.article {
     line-height: 45px;
     display: block;
     width: 350px; }
-    .flex-active-slide header.article h1 {
-      -webkit-animation-name: fadeInLeft;
-      animation-name: fadeInLeft;
-      -webkit-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-delay: 0s;
-      animation-delay: 0s;
-      -webkit-animation-timing-function: ease;
-      animation-timing-function: ease;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
   header.article h2 {
     border-top: none;
     font-size: 25px;
     display: inline-block;
     line-height: 25px; }
-    .flex-active-slide header.article h2 {
-      -webkit-animation-name: fadeInLeft;
-      animation-name: fadeInLeft;
-      -webkit-animation-iteration-count: 1;
-      animation-iteration-count: 1;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-delay: 600ms;
-      animation-delay: 600ms;
-      -webkit-animation-timing-function: ease;
-      animation-timing-function: ease;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
     header.article h2:before {
       content: "";
       height: 20px;
       width: 20px;
-      margin: -25px 0 0 -20px;
+      margin: -20px 0 0 -20px;
       display: block;
       position: absolute;
       background-color: #D13044; }
-  .flex-active-slide header.article .social {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 1200ms;
-    animation-delay: 1200ms;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
   header.article .social a {
     background-color: #D13044;
     border-right: solid 5px white;
