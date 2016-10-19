@@ -6,7 +6,7 @@ body
 +font-face(rakoon)
 
 +border
-+media(1000px, max)
+@media screen and ( max-height: 600px )
     +border(3px, 2px)
 
 
@@ -148,7 +148,7 @@ body.mag1
 
 
 header.article
-    padding-top: 20px
+    padding-top: 2vh
     .flex-active-slide &
         +fadeInLeft
     h1, h2
@@ -156,55 +156,41 @@ header.article
 
         border-left: none
         color: white
-        padding: 15px 20px
+        padding: ($nudge / 2) $nudge
         margin: 0
+        line-height: 100%
     h1
-        font-size: 45px
-        line-height: 45px
+        font-size: 6vh
         display: block
-        width: 350px
+        width: 45vh
     h2
         border-top: none
-        font-size: 25px
+        font-size: $nudge
         display: inline-block
-        line-height: 25px
-        &:before
-            content: ""
-            height: 20px
-            width: 20px
-            margin: -20px 0 0 -20px
-            display: block
-            position: absolute
-            background-color: $c-mag1
-    .social a:first-of-type
-        width: 60px
-        padding-left: 20px
-        &:hover
-            width: 80px
-        &:before
-            content: ""
-            height: 20px
-            width: 20px
-            margin: -20px 0 0 -20px
-            display: block
-            position: absolute
-            background-color: $c-mag1
+        +nudge($c-mag1)
+    .social
+        a:first-of-type
+            width: $social + $nudge
+            padding-left: $nudge
+            &:hover
+                width: $social-hover + $nudge
+            +nudge($c-mag1)
 
 .social
+    font-size: 2.5vh
     a
         background-color: $c-mag1
-
-
-        width: 35px
-        height: 35px
+        width: $social
+        height: $social
         +transition
+        padding-top: 1vh
+        @media screen and ( max-height: 600px )
+            padding-top: .5vh
         text-align: center
         color: white
         display: inline-block
-        padding-top: 2px
-        font-size: 15px
         &:hover
-            width: 55px
+            width: $social-hover
             color: white
         &:not(:first-of-type)
             margin-left: -5px
@@ -215,12 +201,9 @@ header.article
         .flex-active-slide &
             +fadeInRight($delay: $delay)
         a
-
             height: 40px
             &:first-of-type
-
-               width: 40px
-
+               width: 3vh + $nudge
             &:hover
                 width: 60px
             &:nth-of-type(3)

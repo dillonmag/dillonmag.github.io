@@ -33756,7 +33756,7 @@ header.article h1, header.article h2 {
 .eye p {
   border: solid 5px white; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-height: 600px) {
   .flexslider .flex-prev, .flexslider .flex-next {
     border: solid 2px white; }
     .flexslider .flex-prev:before, .flexslider .flex-next:before {
@@ -34039,7 +34039,7 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
     line-height: 17px; }
 
 header.article {
-  padding-top: 20px; }
+  padding-top: 2vh; }
   .flex-active-slide header.article {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
@@ -34059,87 +34059,89 @@ header.article {
     background-color: #D13044;
     border-left: none;
     color: white;
-    padding: 15px 20px;
-    margin: 0; }
+    padding: 1.5vh 3vh;
+    margin: 0;
+    line-height: 100%; }
   header.article h1 {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 6vh;
     display: block;
-    width: 350px; }
+    width: 45vh; }
   header.article h2 {
     border-top: none;
-    font-size: 25px;
-    display: inline-block;
-    line-height: 25px; }
+    font-size: 3vh;
+    display: inline-block; }
     header.article h2:before {
       content: "";
-      height: 20px;
-      width: 20px;
-      margin: -20px 0 0 -20px;
+      height: 3vh;
+      width: 3vh;
+      margin: -3vh 0 0 -3vh;
       display: block;
       position: absolute;
       background-color: #D13044; }
   header.article .social a:first-of-type {
-    width: 60px;
-    padding-left: 20px; }
+    width: 8vh;
+    padding-left: 3vh; }
     header.article .social a:first-of-type:hover {
-      width: 80px; }
+      width: 10vh; }
     header.article .social a:first-of-type:before {
       content: "";
-      height: 20px;
-      width: 20px;
-      margin: -20px 0 0 -20px;
+      height: 3vh;
+      width: 3vh;
+      margin: -3vh 0 0 -3vh;
       display: block;
       position: absolute;
       background-color: #D13044; }
 
-.social a {
-  background-color: #D13044;
-  width: 35px;
-  height: 35px;
-  -webkit-transition: all 300ms ease-out !important;
-  transition: all 300ms ease-out !important;
-  text-align: center;
-  color: white;
-  display: inline-block;
-  padding-top: 2px;
-  font-size: 15px; }
-  .social a:hover {
-    width: 55px;
-    color: white; }
-  .social a:not(:first-of-type) {
-    margin-left: -5px; }
-
-.social.end {
-  width: 100%;
-  margin-top: 850px;
-  text-align: right; }
-  .flex-active-slide .social.end {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600ms;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
-  .social.end a {
-    height: 40px; }
-    .social.end a:first-of-type {
-      width: 40px; }
-    .social.end a:hover {
-      width: 60px; }
-    .social.end a:nth-of-type(3) {
-      border-right: none;
-      width: 30px; }
-      .social.end a:nth-of-type(3):hover {
-        width: 55px; }
+.social {
+  font-size: 2.5vh; }
+  .social a {
+    background-color: #D13044;
+    width: 5vh;
+    height: 5vh;
+    -webkit-transition: all 300ms ease-out !important;
+    transition: all 300ms ease-out !important;
+    padding-top: 1vh;
+    text-align: center;
+    color: white;
+    display: inline-block; }
+    @media screen and (max-height: 600px) {
+      .social a {
+        padding-top: .5vh; } }
+    .social a:hover {
+      width: 7vh;
+      color: white; }
+    .social a:not(:first-of-type) {
+      margin-left: -5px; }
+  .social.end {
+    width: 100%;
+    margin-top: 850px;
+    text-align: right; }
+    .flex-active-slide .social.end {
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-delay: 600ms;
+      animation-delay: 600ms;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .social.end a {
+      height: 40px; }
+      .social.end a:first-of-type {
+        width: 6vh; }
+      .social.end a:hover {
+        width: 60px; }
+      .social.end a:nth-of-type(3) {
+        border-right: none;
+        width: 30px; }
+        .social.end a:nth-of-type(3):hover {
+          width: 55px; }
 
 .eye {
   width: 200px;

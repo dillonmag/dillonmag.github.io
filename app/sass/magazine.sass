@@ -12,9 +12,18 @@
         width: $width
 
 
-
 body
     +magazine
+
+=nudge($color: $c-mag1)
+    &:before
+        content: ""
+        height: 3vh
+        width: 3vh
+        margin: -3vh 0 0 -3vh
+        display: block
+        position: absolute
+        background-color: $c-mag1
 
 =spread($mag: 'mag1', $spread: 'spread1')
     li.#{$spread}
