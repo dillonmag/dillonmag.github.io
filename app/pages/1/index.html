@@ -18,12 +18,21 @@
    {% import "macros/article.html" as editorial %}
   {{ editorial.article(
     mag="1",
-    article="spread1",
-    title="on being seen seeing others",
+    article="editorial",
+    title="On Being Seen Seeing Others",
     author="Vanessa Dudley"
 ) }}
 </li>
-<li id="spread1" class="spread1 page1"></li>
+<li id="spread1" class="spread1 page1">
+      {% include "macros/article.html" %}
+   {% import "macros/article.html" as spread1 %}
+  {{ spread1.article(
+    mag="1",
+    article="spread1",
+    title="voluptates possimus repellendus, aperiam.",
+    author="Nicholas Frota"
+) }}
+</li>
 <li class="spread1 page2"></li>
 <li class="spread1 page3"></li>
 <li class="spread1 page4"></li>

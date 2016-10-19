@@ -126,7 +126,7 @@ body.mag1
     margin-left: 545px
 
 li#editorial
-    background-color: red
+    background-color: #eee
 
 header.article
     padding-top: 20px
@@ -136,16 +136,21 @@ header.article
         border-left: none
         color: white
         padding: 15px 20px
-        display: inline-block
         margin: 0
     h1
-        font-size: 50px
-        line-height: 50px
+        font-size: 45px
+        line-height: 45px
+        display: block
         width: 350px
+        .flex-active-slide &
+            +fadeInLeft
     h2
         border-top: none
-        font-size: 30px
-        line-height: 30px
+        font-size: 25px
+        display: inline-block
+        line-height: 25px
+        .flex-active-slide &
+            +fadeInLeft($delay: $delay)
         &:before
             content: ""
             height: 20px
@@ -154,3 +159,35 @@ header.article
             display: block
             position: absolute
             background-color: $c-mag1
+    .social
+        .flex-active-slide &
+            +fadeInLeft($delay: ($delay * 2))
+        a
+            background-color: $c-mag1
+            border-right: solid 5px white
+            border-bottom: solid 5px white
+            width: 35px
+            height: 35px
+            +transition
+            text-align: center
+            color: white
+            display: inline-block
+            padding-top: 2px
+            font-size: 15px
+            &:hover
+                width: 55px
+                &:first-of-type
+                    width: 80px
+            &:not(:first-of-type)
+                margin-left: -5px
+            &:first-of-type
+                width: 60px
+                padding-left: 20px
+                &:before
+                    content: ""
+                    height: 20px
+                    width: 20px
+                    margin: -20px 0 0 -20px
+                    display: block
+                    position: absolute
+                    background-color: $c-mag1
