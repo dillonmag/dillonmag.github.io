@@ -33688,16 +33688,17 @@ html[xmlns] .flexslider .slides {
     -moz-opacity: 1;
     right: 10px; } }
 
-body {
-  font-size: 1.84vh; }
-  body .flexslider {
-    width: 65.42212vh; }
-    body .flexslider .flex-viewport {
-      width: 65.42212vh;
-      height: 92vh; }
-      body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-        height: 92vh;
-        width: 65.42212vh; }
+body .flexslider {
+  width: 65.42212vh; }
+  body .flexslider .flex-viewport {
+    width: 65.42212vh;
+    height: 92vh; }
+    body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
+      height: 92vh;
+      width: 65.42212vh; }
+
+body .cover .title {
+  width: 65.42212vh; }
 
 body {
   position: relative;
@@ -33966,22 +33967,20 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
     margin: 0; }
   .cover header h1 {
     font-family: rakoon;
-    font-size: 8.3em;
-    padding-left: .25em;
-    margin-top: -.07em;
+    font-size: 15vh;
+    padding-left: 3vh;
+    margin-top: -1vh;
     position: absolute; }
   .cover header h2 {
-    font-size: 1.5em;
+    font-size: 3vh;
     float: right;
-    width: 30%;
-    padding: 1.2em 1em; }
+    width: 21vh;
+    padding: 3vh; }
 
 .cover .title {
   position: absolute;
   bottom: 0;
-  display: table;
-  width: 640px;
-  height: 90px; }
+  display: table; }
   .cover .title .cell {
     display: table-cell;
     vertical-align: bottom; }
@@ -33994,11 +33993,11 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
   .cover .title h1 {
     border-left: none;
     border-bottom: none;
-    padding: 15px 25px;
-    font-size: 60px; }
+    padding: .5em;
+    font-size: 3em; }
   .cover .title h2 {
-    font-size: 35px;
-    padding: 15px; }
+    font-size: 2em;
+    padding: .5em; }
 
 .instructions {
   color: white;

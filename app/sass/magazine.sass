@@ -1,14 +1,15 @@
-=magazine($height: 92vh, $ratio: .71111)
-    font-size: ($height * .02)
+=magazine($height: 92vh, $ratio: .71111, $width: ($height * $ratio))
     .flexslider
-        width: ($height * $ratio)
+        width: $width
         .flex-viewport
-            width: ($height * $ratio)
+            width: $width
             height: $height
             .slides
                 & > li, & > li.flex-active-slide
                     height: $height
-                    width: ($height * $ratio)
+                    width: $width
+    .cover .title
+        width: $width
 
 
 
