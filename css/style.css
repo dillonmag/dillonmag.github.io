@@ -33993,11 +33993,11 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
   .cover .title h1 {
     border-left: none;
     border-bottom: none;
-    padding: .5em;
-    font-size: 3em; }
+    padding: 2vh;
+    font-size: 6vh; }
   .cover .title h2 {
-    font-size: 2em;
-    padding: .5em; }
+    font-size: 4vh;
+    padding: 2vh; }
 
 .instructions {
   color: white;
