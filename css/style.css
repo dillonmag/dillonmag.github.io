@@ -33951,7 +33951,10 @@ body {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+    .flexslider .flex-viewport:hover {
+      box-shadow: 0 0 1px black; }
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #FFF; }
   .flexslider .flex-control-nav {

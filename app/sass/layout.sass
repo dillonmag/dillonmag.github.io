@@ -12,8 +12,12 @@ body
     // top: 50%
     // transform: translateY(-50%)
     vertical-align: bottom !important
+
     .flex-viewport
         +slideInLeft($duration: 1s)
+        +shadow(normal, 0 0 1px rgba(0,0,0, .5))
+        &:hover
+            +shadow(normal, 0 0 1px rgba(0,0,0, 1))
         .slides
             li, li.flex-active-slide
                 background-color: #FFF
