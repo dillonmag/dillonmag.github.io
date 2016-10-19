@@ -33689,235 +33689,23 @@ html[xmlns] .flexslider .slides {
     right: 10px; } }
 
 body {
-  font-size: 18px; }
-  body .text {
-    height: 900px; }
-    body .text h1, body .text h2 {
-      font-size: 60px; }
-    body .text h3 {
-      margin-top: 30px; }
-    body .text h1, body .text h2, body .text h3 {
-      padding: 0 10px 0 30px;
-      margin: 0 0 -9.9px -9.9px; }
-    body .text div:first-of-type {
-      padding-right: 15px;
-      padding-left: 60px; }
-    body .text div:nth-of-type(2) {
-      padding-left: 15px;
-      padding-right: 60px; }
+  font-size: 1.84vh; }
   body .flexslider {
-    width: 639.999px; }
+    width: 65.42212vh; }
     body .flexslider .flex-viewport {
-      width: 639.999px;
-      height: 900px; }
+      width: 65.42212vh;
+      height: 92vh; }
       body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-        height: 900px;
-        width: 639.999px; }
-  body .subscription {
-    width: 579.999px;
-    height: 735px; }
-    body .subscription iframe {
-      width: 579.999px; }
-  body .border:nth-of-type(2n-1) {
-    width: 639.999px; }
-  body .border:nth-of-type(2n) {
-    height: 900px; }
-  body .border:nth-of-type(4) {
-    left: 609.999px; }
-  body .cover h1 {
-    top: -9px; }
-  body .cover h2 {
-    padding: 0 18px 0 18px; }
-    body .cover h2:nth-of-type(1) {
-      bottom: 108px; }
-    body .cover h2:nth-of-type(2) {
-      font-size: 72px; }
-  body h1 {
-    font-size: 135px; }
-  body h2 {
-    font-size: 90px; }
-    body h2.pending {
-      font-size: 30px; }
-  @media screen and (max-width: 700px) {
-    body {
-      font-size: 12px;
-      font-size: 13px; }
-      body .text {
-        height: 600px; }
-        body .text h1, body .text h2 {
-          font-size: 40px; }
-        body .text h3 {
-          margin-top: 20px; }
-        body .text h1, body .text h2, body .text h3 {
-          padding: 0 6.66667px 0 20px;
-          margin: 0 0 -6.6px -6.6px; }
-        body .text div:first-of-type {
-          padding-right: 10px;
-          padding-left: 40px; }
-        body .text div:nth-of-type(2) {
-          padding-left: 10px;
-          padding-right: 40px; }
-      body .flexslider {
-        width: 426.666px; }
-        body .flexslider .flex-viewport {
-          width: 426.666px;
-          height: 600px; }
-          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-            height: 600px;
-            width: 426.666px; }
-      body .subscription {
-        width: 386.666px;
-        height: 445px; }
-        body .subscription iframe {
-          width: 366.666px; }
-      body .border:nth-of-type(2n-1) {
-        width: 426.666px; }
-      body .border:nth-of-type(2n) {
-        height: 600px; }
-      body .border:nth-of-type(4) {
-        left: 406.666px; }
-      body .cover h1 {
-        top: -6px; }
-      body .cover h2 {
-        padding: 0 12px 0 12px; }
-        body .cover h2:nth-of-type(1) {
-          bottom: 72px; }
-        body .cover h2:nth-of-type(2) {
-          font-size: 48px; }
-      body h1 {
-        font-size: 90px; }
-      body h2 {
-        font-size: 60px; }
-        body h2.pending {
-          font-size: 20px; }
-      body p.eye {
-        font-size: 20px;
-        line-height: 20px;
-        padding: 15px; }
-      body .text {
-        overflow: auto !important;
-        padding-bottom: 15px; }
-        body .text h3 {
-          margin-top: 20px; }
-        body .text div {
-          width: 100%;
-          float: none;
-          padding: 0 15px !important; } }
-  @media only screen and (max-width: 768px) {
-    body {
-      font-size: 19px; }
-      body .text {
-        height: 950px; }
-        body .text h1, body .text h2 {
-          font-size: 20px; }
-        body .text h3 {
-          margin-top: 10px; }
-        body .text h1, body .text h2, body .text h3 {
-          padding: 0 3.33333px 0 10px;
-          margin: 0 0 -3.3px -3.3px; }
-        body .text div:first-of-type {
-          padding-right: 5px;
-          padding-left: 20px; }
-        body .text div:nth-of-type(2) {
-          padding-left: 5px;
-          padding-right: 20px; }
-      body .flexslider {
-        width: 675.5545px; }
-        body .flexslider .flex-viewport {
-          width: 675.5545px;
-          height: 950px; }
-          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-            height: 950px;
-            width: 675.5545px; }
-      body .subscription {
-        width: 655.5545px;
-        height: 805px; }
-        body .subscription iframe {
-          width: 615.5545px; }
-      body .border:nth-of-type(2n-1) {
-        width: 675.5545px; }
-      body .border:nth-of-type(2n) {
-        height: 950px; }
-      body .border:nth-of-type(4) {
-        left: 665.5545px; }
-      body .cover h1 {
-        top: -9.5px; }
-      body .cover h2 {
-        padding: 0 19px 0 19px; }
-        body .cover h2:nth-of-type(1) {
-          bottom: 114px; }
-        body .cover h2:nth-of-type(2) {
-          font-size: 76px; }
-      body h1 {
-        font-size: 142.5px; }
-      body h2 {
-        font-size: 95px; }
-        body h2.pending {
-          font-size: 10px; } }
-  @media only screen and (max-width: 320px) {
-    body {
-      font-size: 8.5px; }
-      body .text {
-        height: 425px; }
-        body .text h1, body .text h2 {
-          font-size: 20px; }
-        body .text h3 {
-          margin-top: 10px; }
-        body .text h1, body .text h2, body .text h3 {
-          padding: 0 3.33333px 0 10px;
-          margin: 0 0 -3.3px -3.3px; }
-        body .text div:first-of-type {
-          padding-right: 5px;
-          padding-left: 20px; }
-        body .text div:nth-of-type(2) {
-          padding-left: 5px;
-          padding-right: 20px; }
-      body .flexslider {
-        width: 302.22175px; }
-        body .flexslider .flex-viewport {
-          width: 302.22175px;
-          height: 425px; }
-          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-            height: 425px;
-            width: 302.22175px; }
-      body .subscription {
-        width: 282.22175px;
-        height: 280px; }
-        body .subscription iframe {
-          width: 242.22175px; }
-      body .border:nth-of-type(2n-1) {
-        width: 302.22175px; }
-      body .border:nth-of-type(2n) {
-        height: 425px; }
-      body .border:nth-of-type(4) {
-        left: 292.22175px; }
-      body .cover h1 {
-        top: -4.25px; }
-      body .cover h2 {
-        padding: 0 8.5px 0 8.5px; }
-        body .cover h2:nth-of-type(1) {
-          bottom: 51px; }
-        body .cover h2:nth-of-type(2) {
-          font-size: 34px; }
-      body h1 {
-        font-size: 63.75px; }
-      body h2 {
-        font-size: 42.5px; }
-        body h2.pending {
-          font-size: 10px; }
-      body .flexslider .flex-control-nav li a, body .flexslider .flex-control-nav li a:hover, body .flexslider .flex-control-nav li a.flex-active {
-        width: 10px;
-        border-radius: 50%;
-        background-clip: padding-box; } }
+        height: 92vh;
+        width: 65.42212vh; }
 
 body {
   position: relative;
   z-index: 1;
   background-size: 15px;
   background-color: none;
-  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C12%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270.707%2C0%200%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270.707%2C12%200%2C12%200%2C11.293%2011.293%2C0%2012%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%270%2C11.293%2011.293%2C0%200.707%2C0%200%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%270.707%2C12%2012%2C0.707%2012%2C11.293%2011.293%2C12%20%27/%3E%0A%3C/svg%3E");
-  heighT: 100vh;
-  padding: 10px; }
+  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C0%2011.293%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270%2C11.293%200%2C12%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270%2C11.293%200%2C12%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C11.293%2012%2C12%2011.293%2C12%200%2C0.707%200%2C0%200.707%2C0%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%2711.293%2C12%200%2C0.707%200%2C11.293%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%2712%2C11.293%200.707%2C0%2011.293%2C0%2012%2C0.707%20%27/%3E%0A%3C/svg%3E");
+  padding: 20px; }
 
 @font-face {
   font-family: rakoon;
@@ -33932,6 +33720,67 @@ body {
   @font-face {
     font-family: rakoon;
     src: url("../fonts/rakoon.svg#rakoon") format("svg"); } }
+
+.flexslider .flex-prev, .flexslider .flex-next {
+  border: solid 3px white; }
+  .flexslider .flex-prev:before, .flexslider .flex-next:before {
+    padding-top: 5px; }
+
+.cover header {
+  border-bottom: solid 5px white; }
+  .cover header h2 {
+    border-left: solid 5px white; }
+
+.cover .title h1 {
+  border: solid 5px white; }
+
+.cover .title h2 {
+  border-top: solid 5px white; }
+
+.instructions {
+  border: solid 3px white; }
+
+header.article h1, header.article h2 {
+  border: solid 5px white; }
+
+.social a {
+  border-right: solid 5px white;
+  border-bottom: solid 5px white; }
+
+.social.end a {
+  border-top: solid 5px white; }
+  .social.end a:first-of-type {
+    border-left: solid 5px white; }
+
+.eye p {
+  border: solid 5px white; }
+
+@media screen and (max-width: 1000px) {
+  .flexslider .flex-prev, .flexslider .flex-next {
+    border: solid 2px white; }
+    .flexslider .flex-prev:before, .flexslider .flex-next:before {
+      padding-top: 3px; }
+  .cover header {
+    border-bottom: solid 3px white; }
+    .cover header h2 {
+      border-left: solid 3px white; }
+  .cover .title h1 {
+    border: solid 3px white; }
+  .cover .title h2 {
+    border-top: solid 3px white; }
+  .instructions {
+    border: solid 2px white; }
+  header.article h1, header.article h2 {
+    border: solid 3px white; }
+  .social a {
+    border-right: solid 3px white;
+    border-bottom: solid 3px white; }
+  .social.end a {
+    border-top: solid 3px white; }
+    .social.end a:first-of-type {
+      border-left: solid 3px white; }
+  .eye p {
+    border: solid 3px white; } }
 
 .flexslider {
   position: relative;
@@ -33956,14 +33805,12 @@ body {
     .flexslider .flex-viewport .slides li, .flexslider .flex-viewport .slides li.flex-active-slide {
       background-color: #eee; }
   .flexslider .flex-prev, .flexslider .flex-next {
-    background-color: #D13044;
-    border: solid 3px white; }
+    background-color: #D13044; }
     .touch .flexslider .flex-prev, .touch .flexslider .flex-next {
       display: none; }
     .flexslider .flex-prev:before, .flexslider .flex-next:before {
       color: white;
-      font-size: 40px;
-      padding-top: 5px; }
+      font-size: 40px; }
     .flexslider .flex-prev:hover, .flexslider .flex-next:hover {
       text-decoration: none !important; }
   .flexslider .flex-prev {
@@ -33996,7 +33843,7 @@ body {
         border-radius: 0;
         background-clip: padding-box;
         cursor: pointer;
-        width: 20px;
+        width: 10px;
         height: 10px;
         opacity: 1;
         filter: "alpha(opacity=100)";
@@ -34105,32 +33952,29 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
   margin-left: 4px; }
 
 .cover header {
-  height: 160px;
-  padding-top: 10px;
+  zoom: 1;
   background-color: #D13044;
-  border-bottom: solid 5px white;
+  padding-top: 10px;
   color: white; }
+  .cover header:before, .cover header:after {
+    display: table;
+    content: ""; }
+  .cover header:after {
+    clear: both; }
   .cover header h1, .cover header h2 {
-    color: white; }
+    color: white;
+    margin: 0; }
   .cover header h1 {
     font-family: rakoon;
-    text-transform: lowercase;
-    font-size: 150px;
-    margin: 0;
-    padding-left: 30px;
-    float: left;
-    line-height: 150px; }
+    font-size: 8.3em;
+    padding-left: .25em;
+    margin-top: -.07em;
+    position: absolute; }
   .cover header h2 {
-    font-size: 27px;
+    font-size: 1.5em;
     float: right;
-    width: 200px;
-    border-left: solid 5px white;
-    line-height: 27px;
-    height: 150px;
-    margin: 0;
-    margin-left: 20px;
-    padding: 28px 35px;
-    vertical-align: middle; }
+    width: 30%;
+    padding: 1.2em 1em; }
 
 .cover .title {
   position: absolute;
@@ -34148,19 +33992,16 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
     color: white;
     margin: 0; }
   .cover .title h1 {
-    border: solid 5px white;
     border-left: none;
     border-bottom: none;
     padding: 15px 25px;
     font-size: 60px; }
   .cover .title h2 {
     font-size: 35px;
-    padding: 15px;
-    border-top: solid 5px white; }
+    padding: 15px; }
 
 .instructions {
   color: white;
-  border: solid 3px white;
   border-right: none;
   position: absolute;
   float: right;
@@ -34208,7 +34049,6 @@ header.article {
     backface-visibility: hidden; }
   header.article h1, header.article h2 {
     background-color: #D13044;
-    border: solid 5px white;
     border-left: none;
     color: white;
     padding: 15px 20px;
@@ -34247,8 +34087,6 @@ header.article {
 
 .social a {
   background-color: #D13044;
-  border-right: solid 5px white;
-  border-bottom: solid 5px white;
   width: 35px;
   height: 35px;
   -webkit-transition: all 300ms ease-out !important;
@@ -34284,10 +34122,8 @@ header.article {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
   .social.end a {
-    border-top: solid 5px white;
     height: 40px; }
     .social.end a:first-of-type {
-      border-left: solid 5px white;
       width: 40px; }
     .social.end a:hover {
       width: 60px; }
@@ -34302,7 +34138,6 @@ header.article {
   padding-top: 20px; }
   .eye p {
     background-color: #D13044;
-    border: solid 5px white;
     color: white;
     padding: 15px 20px;
     line-height: 120%;

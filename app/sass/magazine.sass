@@ -1,21 +1,5 @@
-=magazine($height: 900px, $margin: 30px, $ratio: .71111)
+=magazine($height: 92vh, $ratio: .71111)
     font-size: ($height * .02)
-    .text
-        height: $height
-        h1, h2
-            font-size: ($margin * 2)
-        h3
-            margin-top: $margin
-        h1, h2, h3
-            padding: 0 ($margin / 3) 0 $margin
-            margin: 0 0 ($margin * -.33) ($margin * -.33)
-        div
-            &:first-of-type
-                padding-right: ($margin / 2)
-                padding-left: ($margin * 2)
-            &:nth-of-type(2)
-                padding-left: ($margin / 2)
-                padding-right: ($margin * 2)
     .flexslider
         width: ($height * $ratio)
         .flex-viewport
@@ -25,60 +9,11 @@
                 & > li, & > li.flex-active-slide
                     height: $height
                     width: ($height * $ratio)
-    .subscription
-        width: ($height * $ratio) - ($margin * 2)
-        height: $height - $margin - 135px
-        iframe
-            width: ($height * $ratio) - 60px
-    .border
-        &:nth-of-type(2n-1)
-            width: ($height * $ratio)
-        &:nth-of-type(2n)
-            height: $height
-        &:nth-of-type(4)
-            left: ($height * $ratio) - $margin
-    .cover
-        h1
-            top: ($height * -.01)
-        h2
-            padding: 0 ($height * .02) 0 ($height * .02)
-            &:nth-of-type(1)
-                bottom: ($height * .12)
-            &:nth-of-type(2)
-                font-size: ($height * .08)
-    h1
-        font-size: ($height * .15)
-    h2
-        font-size: ($height * .1)
-        &.pending
-            font-size: $margin
+
+
 
 body
     +magazine
-    +media(700px, max, height)
-        +magazine(600px, 20px)
-        font-size: 13px
-        p.eye
-            font-size: 20px
-            line-height: 20px
-            padding: 15px
-        .text
-            overflow: auto !important
-            padding-bottom: 15px
-            h3
-                margin-top: 20px
-            div
-                width: 100%
-                float: none
-                padding: 0 15px !important
-    +media(ipad, portrait)
-        +magazine(950px, 10px)
-    +media(iphone5, portrait)
-        +magazine(425px, 10px)
-        .flexslider .flex-control-nav li
-            a, a:hover, a.flex-active
-                width: 10px
-                +radius(normal, 50%)
 
 =spread($mag: 'mag1', $spread: 'spread1')
     li.#{$spread}
@@ -108,3 +43,36 @@ body
         &.page12
             background-image: url("/images/#{$mag}/#{$spread}/12.png")
 
+=border($primary: 5px, $secondary: 3px, $color: white)
+    .flexslider
+        .flex-prev, .flex-next
+            border: solid $secondary $color
+            &:before
+                padding-top: $primary
+    .cover
+        header
+            border-bottom: solid $primary $color
+            h2
+                border-left: solid $primary $color
+        .title
+            h1
+                border: solid $primary $color
+            h2
+                border-top: solid $primary $color
+    .instructions
+        border: solid $secondary $color
+    header.article
+        h1, h2
+            border: solid $primary $color
+    .social
+        a
+            border-right: solid $primary $color
+            border-bottom: solid $primary $color
+        &.end
+            a
+                border-top: solid $primary $color
+                &:first-of-type
+                   border-left: solid $primary $color
+    .eye
+        p
+            border: solid $primary $color

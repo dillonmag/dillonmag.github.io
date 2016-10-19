@@ -1,10 +1,14 @@
 body
-    +pattern(lines-up-a, 15px, #666, #333)
-    heighT: 100vh
-    padding: 10px
+    +pattern(lines-down-a, 15px, #666, #333)
+    padding: 20px
 
 
 +font-face(rakoon)
+
++border
++media(1000px, max)
+    +border(3px, 2px)
+
 
 .flexslider
     position: relative
@@ -21,13 +25,12 @@ body
                 background-color: #eee
     .flex-prev, .flex-next
         background-color: $c-mag1
-        border: solid 3px white
+
         .touch &
             display: none
         &:before
             color: white
             font-size: 40px
-            padding-top: 5px
         &:hover
             text-decoration: none !important
     .flex-prev
@@ -46,7 +49,7 @@ body
             a
                 +radius(normal, 0)
                 cursor: pointer
-                width: $gap
+                width: $gapxhalf
                 height: $gapxhalf
                 +opacity(100)
                 background-color: #999
@@ -77,33 +80,25 @@ body.mag1
 
 .cover
     header
-        height: 160px
-        padding-top: 10px
+        +clearfix
         background-color: $c-mag1
-        border-bottom: solid 5px white
+        padding-top: 10px
         color: white
         h1, h2
             color: white
-
+            margin: 0
         h1
             font-family: $font-brand
-            text-transform: lowercase
-            font-size: 150px
-            margin: 0
-            padding-left: 30px
-            float: left
-            line-height: 150px
+            font-size: 8.3em
+            padding-left: .25em
+            margin-top: -.07em
+            position: absolute
         h2
-            font-size: 27px
+            font-size: 1.5em
             float: right
-            width: 200px
-            border-left: solid 5px white
-            line-height: 27px
-            height: 150px
-            margin: 0
-            margin-left: 20px
-            padding: 28px 35px
-            vertical-align: middle
+            width: 30%
+            padding: 1.2em 1em
+
     .title
         position: absolute
         bottom: 0
@@ -121,7 +116,7 @@ body.mag1
             color: white
             margin: 0
         h1
-            border: solid 5px white
+
             border-left: none
             border-bottom: none
             padding: 15px 25px
@@ -129,11 +124,10 @@ body.mag1
         h2
             font-size: 35px
             padding: 15px
-            border-top: solid 5px white
+
 
 .instructions
     color: white
-    border: solid 3px white
     border-right: none
     position: absolute
     float: right
@@ -157,7 +151,7 @@ header.article
         +fadeInLeft
     h1, h2
         background-color: $c-mag1
-        border: solid 5px white
+
         border-left: none
         color: white
         padding: 15px 20px
@@ -197,8 +191,8 @@ header.article
 .social
     a
         background-color: $c-mag1
-        border-right: solid 5px white
-        border-bottom: solid 5px white
+
+
         width: 35px
         height: 35px
         +transition
@@ -219,10 +213,10 @@ header.article
         .flex-active-slide &
             +fadeInRight($delay: $delay)
         a
-            border-top: solid 5px white
+
             height: 40px
             &:first-of-type
-               border-left: solid 5px white
+
                width: 40px
 
             &:hover
@@ -238,7 +232,7 @@ header.article
     padding-top: 20px
     p
         background-color: $c-mag1
-        border: solid 5px white
+
         color: white
         padding: 15px 20px
         line-height: 120%

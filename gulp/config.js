@@ -54,7 +54,9 @@ var config = {
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
           // inject:framework
+          
           './bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
+          
           // endinject
           // inject:flexslider
           './app/js/flexslider.js',
