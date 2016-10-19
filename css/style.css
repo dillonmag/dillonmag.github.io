@@ -33689,16 +33689,16 @@ html[xmlns] .flexslider .slides {
     right: 10px; } }
 
 body .flexslider {
-  width: 65.42212vh; }
+  width: 63.9999vh; }
   body .flexslider .flex-viewport {
-    width: 65.42212vh;
-    height: 92vh; }
+    width: 63.9999vh;
+    height: 90vh; }
     body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-      height: 92vh;
-      width: 65.42212vh; }
+      height: 90vh;
+      width: 63.9999vh; }
 
 body .cover .title {
-  width: 65.42212vh; }
+  width: 63.9999vh; }
 
 body {
   position: relative;
@@ -33786,6 +33786,9 @@ header.article h1, header.article h2 {
 .flexslider {
   position: relative;
   margin: 0 auto !important;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   vertical-align: bottom !important; }
   .flexslider .flex-viewport {
     -webkit-animation-name: slideInLeft;
