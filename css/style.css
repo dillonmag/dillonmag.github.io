@@ -32797,13 +32797,13 @@ h1, h2, h3, h4, .nav li a, h5, h6 {
 body {
   background-color: white;
   color: black;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: LiberationSans-Regular; }
 
 html,
 input,
 select,
 textarea {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: LiberationSans-Regular;
   color: black; }
 
 :focus {
@@ -34200,33 +34200,119 @@ header.article {
       display: block;
       position: absolute;
       background-color: #D13044; }
-  header.article .social a {
+  header.article .social a:first-of-type {
+    width: 60px;
+    padding-left: 20px; }
+    header.article .social a:first-of-type:hover {
+      width: 80px; }
+    header.article .social a:first-of-type:before {
+      content: "";
+      height: 20px;
+      width: 20px;
+      margin: -20px 0 0 -20px;
+      display: block;
+      position: absolute;
+      background-color: #D13044; }
+
+.social a {
+  background-color: #D13044;
+  border-right: solid 5px white;
+  border-bottom: solid 5px white;
+  width: 35px;
+  height: 35px;
+  -webkit-transition: all 300ms ease-out !important;
+  transition: all 300ms ease-out !important;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  padding-top: 2px;
+  font-size: 15px; }
+  .social a:hover {
+    width: 55px;
+    color: white; }
+  .social a:not(:first-of-type) {
+    margin-left: -5px; }
+
+.social.end {
+  width: 100%;
+  margin-top: 850px;
+  text-align: right; }
+  .flex-active-slide .social.end {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 600ms;
+    animation-delay: 600ms;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .social.end a {
+    border-top: solid 5px white;
+    height: 40px; }
+    .social.end a:first-of-type {
+      border-left: solid 5px white;
+      width: 40px; }
+    .social.end a:hover {
+      width: 60px; }
+    .social.end a:nth-of-type(3) {
+      border-right: none;
+      width: 30px; }
+      .social.end a:nth-of-type(3):hover {
+        width: 55px; }
+
+.eye {
+  width: 200px;
+  padding-top: 20px; }
+  .eye p {
     background-color: #D13044;
-    border-right: solid 5px white;
-    border-bottom: solid 5px white;
-    width: 35px;
-    height: 35px;
-    -webkit-transition: all 300ms ease-out !important;
-    transition: all 300ms ease-out !important;
-    text-align: center;
+    border: solid 5px white;
     color: white;
-    display: inline-block;
-    padding-top: 2px;
-    font-size: 15px; }
-    header.article .social a:hover {
-      width: 55px; }
-      header.article .social a:hover:first-of-type {
-        width: 80px; }
-    header.article .social a:not(:first-of-type) {
-      margin-left: -5px; }
-    header.article .social a:first-of-type {
-      width: 60px;
-      padding-left: 20px; }
-      header.article .social a:first-of-type:before {
-        content: "";
-        height: 20px;
-        width: 20px;
-        margin: -20px 0 0 -20px;
-        display: block;
-        position: absolute;
-        background-color: #D13044; }
+    padding: 15px 20px;
+    line-height: 120%;
+    margin: 0; }
+    .eye p:not(:first-of-type) {
+      border-top: none; }
+  .eye.right {
+    float: right; }
+    .flex-active-slide .eye.right {
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-delay: 600ms;
+      animation-delay: 600ms;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .eye.right p {
+      border-right: none; }
+  .eye.left {
+    float: left; }
+    .flex-active-slide .eye.left {
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-delay: 600ms;
+      animation-delay: 600ms;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .eye.left p {
+      border-left: none; }

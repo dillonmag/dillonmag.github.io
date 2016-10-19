@@ -1,0 +1,9 @@
+{% macro eye(
+    position="left",
+    content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui atque delectus ex quos adipisci distinctio. Dicta, id? Labore, dicta, commodi?",
+    margin="0"
+    ) %}
+<div class="eye {{ position }}" style="margin-top: {{ margin }}">
+<p>{{ content | safe }}</p>
+</div>
+{% endmacro %}
