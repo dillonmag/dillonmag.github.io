@@ -25,25 +25,29 @@ body
                 background-color: #eee
     .flex-prev, .flex-next
         background-color: $c-mag1
-
+        height: 6vh
+        width: 6vh
+        padding-top: 2vh
+        +border-box
+        +hide-text
         .touch &
             display: none
         &:before
             color: white
-            font-size: 40px
+            font-size: 6vh
         &:hover
             text-decoration: none !important
     .flex-prev
         border-left: none
-        padding-left: 10px
+        padding-left: 1.5vh
         left: 0 !important
     .flex-next
         border-right: none
-        padding-right: 10px
+        padding-right: 1.5vh
         right: 0 !important
     .flex-control-nav
         +fadeInLeft($delay: $delay)
-        padding-top: 10px !important
+        padding-top: 1vh !important
         li
             margin-left: -4px
             a
