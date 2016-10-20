@@ -33566,6 +33566,30 @@ html[xmlns] .flexslider .slides {
   -moz-opacity: 0;
   cursor: default; }
 
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000; }
+  .flex-pauseplay a:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: inline-block;
+    content: '\f004'; }
+  .flex-pauseplay a:hover {
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -khtml-opacity: 1;
+    -moz-opacity: 1; }
+  .flex-pauseplay a.flex-play:before {
+    content: '\f003'; }
+
 .flex-control-nav {
   width: 100%;
   text-align: center; }
@@ -34101,7 +34125,8 @@ header.article {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .social.end a {
-      padding-top: .5vh; }
+      padding-top: .8vh;
+      border-width: 3px; }
       @media only screen and (max-width: 568px) {
         .social.end a {
           height: 5.5vh; } }
