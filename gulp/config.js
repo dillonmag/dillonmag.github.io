@@ -8,11 +8,11 @@ var config = {
   sass: {
     src: 'sass/style.sass',
     dest: 'css',
-    error: 'Error Running SASS'
+    error: 'Errorn Running SASS'
   },
    favicon: {
-    windowsBackgroundColor: '#eeeeee',
-    androidChromeThemeColor: '#eeeeee',
+    windowsBackgroundColor: '#D13044',
+    androidChromeThemeColor: '#D13044',
     name: 'dillon',
     safariPinnedTabThemeColor: '#eeeeee'
   },

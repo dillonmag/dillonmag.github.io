@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "LiberationSans-Regular";
+    src: url("LiberationSans.eot");
+    src: url("LiberationSans.eot?#iefix") format("embedded-opentype"),
+         url("LiberationSans.woff2") format("woff2"),
+         url("LiberationSans.woff") format("woff"),
+         url("LiberationSans.ttf") format("ttf"),
+         url("LiberationSans.svg#LiberationSans-Regular") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
