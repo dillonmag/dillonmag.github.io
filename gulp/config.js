@@ -13,7 +13,7 @@ var config = {
    favicon: {
     windowsBackgroundColor: '#eeeeee',
     androidChromeThemeColor: '#eeeeee',
-    name: 'codecode/',
+    name: 'dillon',
     safariPinnedTabThemeColor: '#eeeeee'
   },
       root: {
@@ -54,9 +54,9 @@ var config = {
   js: {
     src: ['./bower_components/jquery/dist/jquery.js',
           // inject:framework
-          
+
           './bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
-          
+
           // endinject
           // inject:flexslider
           './app/js/flexslider.js',
