@@ -33643,8 +33643,7 @@ body {
   z-index: 1;
   background-size: 15px;
   background-color: none;
-  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C0%2011.293%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270%2C11.293%200%2C12%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270%2C11.293%200%2C12%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C11.293%2012%2C12%2011.293%2C12%200%2C0.707%200%2C0%200.707%2C0%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%2711.293%2C12%200%2C0.707%200%2C11.293%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%2712%2C11.293%200.707%2C0%2011.293%2C0%2012%2C0.707%20%27/%3E%0A%3C/svg%3E");
-  padding-top: 5vh; }
+  background-image: url("data:image/svg+xml,%3C?xml%20version%3D%271.0%27%20encoding%3D%27utf-8%27?%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%27-//W3C//DTD%20SVG%201.1//EN%27%20%27http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%27%3E%0A%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%0A  %20width%3D%2712px%27%20height%3D%2712px%27%20viewBox%3D%270%200%2012%2012%27%20enable-background%3D%27new%200%200%2012%2012%27%20xml%3Aspace%3D%27preserve%27%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C0%2011.293%2C0%2012%2C0.707%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270%2C11.293%200%2C12%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%270%2C11.293%200%2C12%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#333333%27%20points%3D%2712%2C11.293%2012%2C12%2011.293%2C12%200%2C0.707%200%2C0%200.707%2C0%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%2711.293%2C12%200%2C0.707%200%2C11.293%200.707%2C12%20%27/%3E%0A%3Cpolygon%20fill%3D%27#666666%27%20points%3D%2712%2C11.293%200.707%2C0%2011.293%2C0%2012%2C0.707%20%27/%3E%0A%3C/svg%3E"); }
   body .flexslider {
     width: 60.44435vh; }
     body .flexslider .flex-viewport {
@@ -33658,6 +33657,22 @@ body {
     margin-top: 75vh; }
   body .cover .title {
     width: 60.44435vh; }
+  @media only screen and (max-width: 1024px) {
+    body {
+      padding-top: 3vh; }
+      body .flexslider {
+        width: 63.9999vh; }
+        body .flexslider .flex-viewport {
+          width: 63.9999vh;
+          height: 90vh; }
+          body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
+            height: 90vh;
+            width: 63.9999vh; }
+      body .social.end {
+        width: 63.9999vh;
+        margin-top: 80vh; }
+      body .cover .title {
+        width: 63.9999vh; } }
   @media only screen and (max-width: 568px) {
     body .flexslider {
       width: 53.33325vh; }
@@ -33761,6 +33776,11 @@ header.article h1, header.article h2 {
       border-left: solid 2px white; }
   .eye p {
     border: solid 2px white; } }
+
+.no-touch .flexslider {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .flexslider {
   position: relative;
@@ -33965,6 +33985,9 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
     padding-left: 3vh;
     font-size: 13.5vh;
     position: absolute; }
+    @media only screen and (max-width: 1024px) {
+      .cover header h1 {
+        font-size: 14.5vh; } }
     @media only screen and (max-width: 568px) {
       .cover header h1 {
         font-size: 12.5vh;
@@ -34016,6 +34039,10 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
   width: 100px;
   margin-right: -100px;
   background-color: #D13044; }
+  @media only screen and (max-width: 1024px) {
+    .instructions {
+      width: 130px;
+      margin-right: -130px; } }
   @media only screen and (max-width: 568px) {
     .instructions {
       width: 70px;
@@ -34106,7 +34133,7 @@ header.article {
       width: 7vh;
       color: white; }
     .social a:not(:first-of-type) {
-      margin-left: -5px; }
+      margin-left: -6px; }
   .social.end {
     text-align: right; }
     .flex-active-slide .social.end {
@@ -34129,9 +34156,14 @@ header.article {
       border-width: 3px; }
       @media only screen and (max-width: 568px) {
         .social.end a {
-          height: 5.5vh; } }
+          padding-top: .5vh;
+          height: 5.5vh; }
+          .social.end a:not(:first-of-type) {
+            margin-left: -4px; } }
       .social.end a:nth-of-type(3) {
         border-right: none; }
+      .social.end a:nth-of-type(1) {
+        width: 5vh; }
 
 .eye {
   width: 25vh; }
@@ -34179,3 +34211,7 @@ header.article {
     line-height: 125%; }
     .text p:not(:first-of-type) {
       margin-top: 1vh; }
+    @media only screen and (max-width: 1024px) {
+      .text p {
+        font-size: 1.9vh;
+        line-height: 130%; } }

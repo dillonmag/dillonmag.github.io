@@ -2,9 +2,10 @@
     mag="1",
     article="spread1",
     title="I like to draw shit",
-    author="Nicholas Frota"
+    author="Nicholas Frota",
+    nudge= "0"
     ) %}
-    <header class="article">
+    <header class="article" style="margin-top: {{ nudge }}">
      <h1>{{ title | safe }}</h1>
      <h2>by {{ author | safe }}</h2>
      <div class="social">
