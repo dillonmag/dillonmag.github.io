@@ -33758,7 +33758,7 @@ header.article h1, header.article h2 {
 .eye p {
   border: solid 3px white; }
 
-@media screen and (max-height: 600px) {
+@media only screen and (max-width: 568px) {
   .flexslider .flex-prev, .flexslider .flex-next {
     border: solid 2px white; }
     .flexslider .flex-prev:before, .flexslider .flex-next:before {
@@ -34116,7 +34116,7 @@ header.article {
     text-align: center;
     color: white;
     display: inline-block; }
-    @media screen and (max-height: 600px) {
+    @media only screen and (max-width: 568px) {
       .social a {
         padding-top: .5vh; } }
     .social a:hover {
@@ -34195,18 +34195,9 @@ header.article {
     .text p:not(:first-of-type) {
       margin-top: 1vh; }
 
-@media screen and (max-height: 600px) {
+@media only screen and (max-width: 568px) {
   #editorial {
-    overflow: auto;
-    overflow: auto;
-    background: -webkit-linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.2), transparent), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.2), transparent) 0 100%;
-    background: linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.2), transparent), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.2), transparent) 0 100%;
-    background: -webkit-linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.5), transparent), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.5), transparent) 0 100%;
-    background: linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.5), transparent), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.5), transparent) 0 100%;
-    background-repeat: no-repeat;
-    background-color: #eee;
-    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
-    background-attachment: local, local, scroll, scroll; }
+    overflow: auto; }
     #editorial .text {
       display: block;
       margin: 0; }

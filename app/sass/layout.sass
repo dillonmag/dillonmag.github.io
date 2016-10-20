@@ -6,7 +6,7 @@ body
 +font-face(LiberationSans)
 
 +border
-@media screen and ( max-height: 600px )
++media(iphone5, landscape)
     +border(3px, 2px)
 
 
@@ -199,7 +199,7 @@ header.article
         height: $social
         +transition
         padding-top: 1vh
-        @media screen and ( max-height: 600px )
+        +media(iphone5, landscape)
             padding-top: .5vh
         text-align: center
         color: white
@@ -261,10 +261,9 @@ header.article
         line-height: 120%
         &:not(:first-of-type)
             margin-top: 1vh
-@media screen and ( max-height: 600px )
++media(iphone5, landscape)
     #editorial
         overflow: auto
-        +scroll-hint(#eee)
         .text
             display: block
             margin: 0
