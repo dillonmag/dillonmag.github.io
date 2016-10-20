@@ -52,10 +52,10 @@
         slider.prop = (vertical) ? "top" : "marginLeft";
         slider.args = {};
         // SLIDESHOW:
-        slider.manualPause = false;
-        slider.stopped = false;
+        slider.manualPause = true;
+        slider.stopped = true;
         //PAUSE WHEN INVISIBLE
-        slider.started = false;
+        slider.started = true;
         slider.startTimeout = null;
         // TOUCH/USECSS:
         slider.transitions = !slider.vars.video && !fade && slider.vars.useCSS && (function() {
