@@ -1,6 +1,9 @@
 body
     +pattern(lines-down-a, 15px, #666, #333)
     padding-top: 5vh
+    +magazine
+    +media(iphone5, landscape)
+        +magazine(75vh)
 
 +font-face(rakoon)
 +font-face(LiberationSans)
@@ -108,11 +111,20 @@ body.mag1
             padding-left: 3vh
             font-size: 13.5vh
             position: absolute
+            +media(iphone5, landscape)
+                font-size: 12.5vh
+                padding-left: 2.5vh
+                line-height: 110%
         h2
             font-size: 3vh
             float: right
             width: 21vh
             padding: 3vh
+            +media(iphone5, landscape)
+                padding: 2vh
+                padding-bottom: 2.5vh
+                width: 17vh
+                font-size: 2.5vh
 
     .title
         position: absolute
@@ -150,6 +162,9 @@ body.mag1
     width: 100px
     margin-right: -100px
     background-color: $c-mag1
+    +media(iphone5, landscape)
+        width: 70px
+        margin-right: -70px
     .flex-active-slide &
         display: block
     .flexslider:hover &
