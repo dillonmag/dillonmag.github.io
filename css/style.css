@@ -34060,6 +34060,9 @@ header.article {
       position: absolute;
       background-color: #D13044; }
 
+#editorial .social {
+  display: none; }
+
 .social {
   font-size: 2.5vh; }
   .social a {
@@ -34132,7 +34135,7 @@ header.article {
   width: 100%;
   margin-right: -1.5vh;
   padding: 1vh;
-  padding-top: 1.5vh; }
+  padding-top: 2.5vh; }
   .text > * {
     display: table-cell;
     width: 50%;
@@ -34147,7 +34150,7 @@ header.article {
   .text p {
     margin: 0;
     padding: 0;
-    font-size: 1.8vh;
-    line-height: 120%; }
+    font-size: 1.85vh;
+    line-height: 125%; }
     .text p:not(:first-of-type) {
       margin-top: 1vh; }
