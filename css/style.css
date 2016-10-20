@@ -34077,7 +34077,7 @@ header.article {
     display: block;
     width: 38vh; }
     #editorial header.article h1 {
-      width: 40vh; }
+      width: 45vh; }
   header.article h2 {
     border-top: none;
     font-size: 3vh;
@@ -34179,18 +34179,40 @@ header.article {
 
 .text {
   display: table;
+  width: 100%;
   margin: 0 -1.5vh;
   padding: 3vh;
-  font-size: 1.9vh; }
+  padding-top: 1.5vh; }
   .text > * {
     display: table-cell;
     width: 50%;
     padding: 0 1.5vh; }
   .text p {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-size: 1.85vh;
+    line-height: 120%; }
     .text p:not(:first-of-type) {
       margin-top: 1vh; }
+
+@media screen and (max-height: 600px) {
+  #editorial {
+    overflow: auto;
+    overflow: auto;
+    background: -webkit-linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.2), transparent), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.2), transparent) 0 100%;
+    background: linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.2), transparent), radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.2), transparent) 0 100%;
+    background: -webkit-linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), -webkit-linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, -webkit-radial-gradient(50% 0, farthest-side, rgba(0, 0, 0, 0.5), transparent), -webkit-radial-gradient(50% 100%, farthest-side, rgba(0, 0, 0, 0.5), transparent) 0 100%;
+    background: linear-gradient(#eee 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), #eee 90%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.5), transparent), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.5), transparent) 0 100%;
+    background-repeat: no-repeat;
+    background-color: #eee;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll; }
+    #editorial .text {
+      display: block;
+      margin: 0; }
+      #editorial .text > * {
+        display: block;
+        width: 100%; } }
 
 body .flexslider {
   width: 60.44435vh; }

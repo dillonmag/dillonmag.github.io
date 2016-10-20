@@ -177,7 +177,7 @@ header.article
         display: block
         width: 38vh
         #editorial &
-            width: 40vh
+            width: 45vh
     h2
         border-top: none
         font-size: $nudge
@@ -253,9 +253,21 @@ header.article
 .text
     +grid
     padding: 3vh
-    font-size: 1.9vh
+    padding-top: 1.5vh
     p
         margin: 0
         padding: 0
+        font-size: 1.85vh
+        line-height: 120%
         &:not(:first-of-type)
             margin-top: 1vh
+@media screen and ( max-height: 600px )
+    #editorial
+        overflow: auto
+        +scroll-hint(#eee)
+        .text
+            display: block
+            margin: 0
+            & > *
+                display: block
+                width: 100%
