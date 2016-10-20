@@ -152,10 +152,15 @@ select
 =grid($col: 2, $space: 1.5vh)
     display: table
     width: 100%
-    margin: 0 ($space * -1)
+    margin-right: ($space * -1)
     & > *
         display: table-cell
         width: (100% / $col)
         padding: 0 $space
-
+    +media(iphone5, landscape)
+        display: block
+        margin: 0
+        & > *
+            display: block
+            width: 100%
 
