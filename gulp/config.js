@@ -8,7 +8,7 @@ var config = {
   sass: {
     src: 'sass/style.sass',
     dest: 'css',
-    error: 'Errorn Running SASS'
+    error: 'Error Running SASS'
   },
    favicon: {
     windowsBackgroundColor: '#D13044',
@@ -32,7 +32,7 @@ var config = {
     src: 'css/style.css',
     dest: 'css',
     html: '**/*.html',
-    ignore: [/.chosen/, /.popover/, /.calendar/, /.modal/]
+    ignore: [/.chosen/, /.popover/, /.calendar/, /.modal/, /.flexslider/]
   },
   inlineCss: {
     src: '*-mail.html'
@@ -55,7 +55,11 @@ var config = {
     src: ['./bower_components/jquery/dist/jquery.js',
           // inject:framework
 
+
+
           './bower_components/semantic-ui-sass/app/assets/javascripts/semantic-ui.js',
+
+
 
           // endinject
           // inject:flexslider
