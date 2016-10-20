@@ -11,8 +11,8 @@ var config = {
     error: 'Error Running SASS'
   },
    favicon: {
-    windowsBackgroundColor: '#D13044',
-    androidChromeThemeColor: '#D13044',
+    windowsBackgroundColor: '#d13044',
+    androidChromeThemeColor: '#d13044',
     name: 'dillon',
     safariPinnedTabThemeColor: '#eeeeee'
   },
