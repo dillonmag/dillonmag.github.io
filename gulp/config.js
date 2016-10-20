@@ -63,7 +63,7 @@ var config = {
 
           // endinject
           // inject:flexslider
-          './app/js/flexslider.js',
+          './app/js/vendors/flexslider.js',
           // endinject
           // inject:clipboard
 

@@ -148,3 +148,11 @@ textarea
   +stamp($icon: $fa-var-angle-down, $position: right, $padding: 10px, $nudge: 7px, $color: $color-link-hover)
 select
   +stamp($icon: $fa-var-check, $position: right)// endinject
+
+=grid($col: 2, $space: 1.5vh)
+    display: table
+    margin: 0 ($space * -1)
+    & > *
+        display: table-cell
+        width: (100% / $col)
+        padding: 0 $space

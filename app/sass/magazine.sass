@@ -1,4 +1,4 @@
-=magazine($height: 85vh, $title: 13.5vh, $ratio: .71111, $width: ($height * $ratio))
+=magazine($height: 85vh, $ratio: .71111, $width: ($height * $ratio))
     .flexslider
         width: $width
         .flex-viewport
@@ -11,11 +11,6 @@
     .cover
         .title
             width: $width
-        header h1
-            font-size: $title
-
-body
-    +magazine
 
 =nudge($color: $c-mag1)
     &:before

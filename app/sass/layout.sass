@@ -106,6 +106,7 @@ body.mag1
         h1
             font-family: $font-brand
             padding-left: 3vh
+            font-size: 13.5vh
             position: absolute
         h2
             font-size: 3vh
@@ -175,6 +176,8 @@ header.article
         font-size: 5vh
         display: block
         width: 38vh
+        #editorial &
+            width: 40vh
     h2
         border-top: none
         font-size: $nudge
@@ -246,3 +249,13 @@ header.article
         float: left
         p
             border-left: none
+
+.text
+    +grid
+    padding: 3vh
+    font-size: 1.9vh
+    p
+        margin: 0
+        padding: 0
+        &:not(:first-of-type)
+            margin-top: 1vh

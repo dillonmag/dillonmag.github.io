@@ -33688,21 +33688,6 @@ html[xmlns] .flexslider .slides {
     -moz-opacity: 1;
     right: 10px; } }
 
-body .flexslider {
-  width: 60.44435vh; }
-  body .flexslider .flex-viewport {
-    width: 60.44435vh;
-    height: 85vh; }
-    body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
-      height: 85vh;
-      width: 60.44435vh; }
-
-body .cover .title {
-  width: 60.44435vh; }
-
-body .cover header h1 {
-  font-size: 13.5vh; }
-
 body {
   position: relative;
   z-index: 1;
@@ -34013,6 +33998,7 @@ body.mag1 .flex-control-nav li:nth-of-type(2), body.mag1 .flex-control-nav li:nt
   .cover header h1 {
     font-family: rakoon;
     padding-left: 3vh;
+    font-size: 13.5vh;
     position: absolute; }
   .cover header h2 {
     font-size: 3vh;
@@ -34090,6 +34076,8 @@ header.article {
     font-size: 5vh;
     display: block;
     width: 38vh; }
+    #editorial header.article h1 {
+      width: 40vh; }
   header.article h2 {
     border-top: none;
     font-size: 3vh;
@@ -34188,3 +34176,51 @@ header.article {
     float: left; }
     .eye.left p {
       border-left: none; }
+
+.text {
+  display: table;
+  margin: 0 -1.5vh;
+  padding: 3vh;
+  font-size: 1.9vh; }
+  .text > * {
+    display: table-cell;
+    width: 50%;
+    padding: 0 1.5vh; }
+  .text p {
+    margin: 0;
+    padding: 0; }
+    .text p:not(:first-of-type) {
+      margin-top: 1vh; }
+
+body .flexslider {
+  width: 60.44435vh; }
+  body .flexslider .flex-viewport {
+    width: 60.44435vh;
+    height: 85vh; }
+    body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
+      height: 85vh;
+      width: 60.44435vh; }
+
+body .cover .title {
+  width: 60.44435vh; }
+
+@media only screen and (max-width: 568px) {
+  body .flexslider {
+    width: 53.33325vh; }
+    body .flexslider .flex-viewport {
+      width: 53.33325vh;
+      height: 75vh; }
+      body .flexslider .flex-viewport .slides > li, body .flexslider .flex-viewport .slides > li.flex-active-slide {
+        height: 75vh;
+        width: 53.33325vh; }
+  body .cover .title {
+    width: 53.33325vh; }
+  body .cover header h1 {
+    font-size: 12.5vh;
+    padding-left: 2.5vh;
+    line-height: 110%; }
+  body .cover header h2 {
+    padding: 2vh;
+    padding-bottom: 2.5vh;
+    width: 17vh;
+    font-size: 2.5vh; } }
