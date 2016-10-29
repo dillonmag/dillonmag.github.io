@@ -174,7 +174,12 @@
  author="Rosemary Susat"
  ) }}
 </li>
-<li class="backcover"></li>
+  <li class="backcover">
+   {% include "macros/article.html" %}
+  {% import 'macros/nextissue.html' as nextissue %}
+  {{nextissue.nexissue(title="next issue", content="NYC live drawing calendar</p><p>accusamus culpa non sed commodi</p><p>fuga eligendi debitis")}}
+{% include "partials/subscribe.html" %}
+</li>
 </ul>
 </div>
 {% endblock %}

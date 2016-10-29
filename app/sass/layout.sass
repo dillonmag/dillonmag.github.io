@@ -100,6 +100,67 @@ body.mag1
         &:last-of-type
             margin-left: 1vh
 
+.backcover
+    form
+        padding: 3vh
+        p, input, .toggle
+            font-size: 2.5vh
+            line-height: 120%
+            color: #666
+        h1
+            color: #666
+            padding: 0
+    .member
+        display: none
+        border-top: solid 1px #ccc
+        padding: 2vh 0
+        padding-bottom: 0
+        margin-top: 1vh
+        +transition
+        p
+            margin-bottom: 1vh
+        &.open
+            display: block
+            +fadeIn
+    header
+        +clearfix
+        background-color: $c-mag1
+        padding-top: 10px
+        color: white
+        & + header
+            margin-top: 2vh
+        &:first-of-type
+            h1
+                width: 35%
+                font-size: 8vh
+                line-heighT: 60%
+                float: left
+            .list
+                width: 65%
+                float: right
+                p
+                    font-size: 2.5vh
+                    line-height: 100%
+                    padding: .4vh 0
+
+    h1, p
+        color: white
+    h1
+        font-family: $font-brand
+        padding-top: 1vh
+        padding-left: 3vh
+        font-size: 11vh
+        line-heighT: 70%
+    .list
+        background-color: $c-mag1
+        padding: 0 3vh
+        padding-bottom: 3vh
+        p
+            margin: 0
+            padding: 0
+
+
+
 .cover
     header
         +clearfix
@@ -290,3 +351,13 @@ header.article
         +media(ipad, landscape)
             font-size: 1.9vh
             line-height: 130%
+
+
+.toggle
+    padding-bottom: 1vh
+
+.half
+    +clearfix
+    & > *
+        float: left
+        width: 50%

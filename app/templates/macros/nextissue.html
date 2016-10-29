@@ -1,0 +1,9 @@
+
+{% macro nexissue(title='next issue', content="") %}
+<header>
+    <h1>{{ title | safe }}</h1>
+    <div class="list">
+        <p>{{ content | safe }}</p>
+    </div>
+</header>
+{% endmacro %}
