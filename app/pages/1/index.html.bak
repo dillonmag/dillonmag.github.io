@@ -50,10 +50,41 @@
   ) }}
 </li>
 <li class="spread1 page2"></li>
-<li class="spread1 page3"></li>
-<li class="spread1 page4"></li>
-<li class="spread1 page5"></li>
+<li class="spread1 page3">
+ {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye1 %}
+ {{ eye1.eye(
+ position="right",
+ content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore minima quo labore modi aut! Iste distinctio odit maiores odio eligendi?</p><p> Fugit quae obcaecati impedit eaque pariatur, at."
+ ) }}
+</li>
+<li class="spread1 page4">
+ {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye2 %}
+ {{ eye2.eye(
+ position="right",
+ content="Eveniet reiciendis optio consequatur qui in ipsam possimus modi adipisci quidem laboriosam!"
+ ) }}
+ {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye3 %}
+ {{ eye3.eye(
+ content="Iure eaque quaerat, dicta quis quidem minima laborum ratione omnis, ipsum! Delectus consequuntur dolorem saepe molestiae, explicabo, quibusdam animi voluptatem? Sint, temporibus."
+ ) }}
+</li>
+<li class="spread1 page5">
+    {% include "macros/eye.html" %}
+    {% import "macros/eye.html" as eye4 %}
+    {{ eye4.eye(
+    content="Cumque, quae quasi facere aspernatur, velit veniam optio quod quas ullam distinctio maiores cupiditate aliquam voluptate."
+    ) }}
+</li>
 <li class="spread1 page6">
+ {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye5 %}
+ {{ eye5.eye(
+ position="right",
+ content="Quis cum praesentium nisi maiores labore voluptatem reiciendis dicta quasi quaerat, deleniti accusamus ex itaque laudantium illo!"
+ ) }}
  {% include "macros/end.html" %}
  {% import "macros/end.html" as end1 %}
  {{ end1.end(
@@ -75,10 +106,7 @@
 
 </li>
 <li class="spread2 page2"></li>
-<li class="spread2 page3"></li>
-<li class="spread2 page4"></li>
-<li class="spread2 page5"></li>
-<li class="spread2 page6">
+<li class="spread2 page3">
  {% include "macros/end.html" %}
  {% import "macros/end.html" as end2 %}
  {{ end2.end(
@@ -98,11 +126,45 @@
     author="Rosemary Susat"
     ) }}
 </li>
-<li class="spread3 page2"></li>
-<li class="spread3 page3"></li>
-<li class="spread3 page4"></li>
-<li class="spread3 page5"></li>
+<li class="spread3 page2">
+     {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye3_1 %}
+ {{ eye3_1.eye(
+ position="right",
+ content="Deleniti accusamus ex itaque laudantium illo!"
+ ) }}
+</li>
+<li class="spread3 page3">
+         {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye3_2 %}
+ {{ eye3_2.eye(
+ position="left",
+ content="Harum quam amet officia obcaecati rerum minima magnam sunt aliquam sequi impedit."
+ ) }}
+</li>
+<li class="spread3 page4">
+             {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye3_2 %}
+ {{ eye3_2.eye(
+ position="right",
+ content="Eveniet expedita, iusto ea rerum culpa saepe unde excepturi quas optio veritatis."
+ ) }}
+</li>
+<li class="spread3 page5">
+                 {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye3_3 %}
+ {{ eye3_3.eye(
+ position="left",
+ content="Recusandae autem, quis reprehenderit expedita unde!"
+ ) }}
+</li>
 <li class="spread3 page6">
+                 {% include "macros/eye.html" %}
+ {% import "macros/eye.html" as eye3_4 %}
+ {{ eye3_4.eye(
+ position="right",
+ content="Dolores sunt alias odit aliquid veniam sed vitae unde, quod iste."
+ ) }}
  {% include "macros/end.html" %}
  {% import "macros/end.html" as end3 %}
  {{ end3.end(
